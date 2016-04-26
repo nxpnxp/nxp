@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>供货商管理后台</title>
+<link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
+<link href="__PUBLIC__/css/my.css" rel="stylesheet">
+<!--[if lte IE 9]>
+<script src="__PUBLIC__/js/respond.js"></script>
+<![endif]-->
+<style>
+body{font-family:"微软雅黑", "宋体";}
+.red{ color:#F00;}
+</style>
+<script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/layer.js"></script>
+</head>
+
+<body>
+{:W('Template/top')}
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+{:W('Template/left')}
+</div>
+<div class="col-md-10">
+<form method="post" action="__CONTROLLER__/delAll">
+<table class="table .table-striped">
+<tr><th></th><th>图片</th><th>名称</th><th>货号</th><th>状态</th><th>操作</th></tr>
+<volist name="goods['data']" id="vo">
+<tr>
+<td><input class="one" type="checkbox" name="ids[]" value="{$vo.id}"/></td>
+<td><img src="{:IMG_PATH}{$vo.thumb}" width="50"></td>
+<td><a href="__CONTROLLER__/detail/id/{$vo.id}">{$vo.title}</a></td>
+<td>{$vo.goodssn}</td>
+<td><if condition="$vo.status eq '未过审，查看原因'"><a href="#" class="red" title="{$vo.reply}">{$vo.status}</a><else/>{$vo.status}</if></td>
+<td>
+<a href="__CONTROLLER__/edit/id/{$vo.id}">编辑</a> <a href="__CONTROLLER__/delete/id/{$vo.id}" onclick="return confirm('确定要删除吗？');" title="移除">删除</a>
+</td>
+</tr>
+</volist>
+<tr><td colspan="6"><input type="checkbox" id="all" >全选 <input type="submit" value="批量删除"/></td></tr>
+</table>
+</form>
+<div class="pagelist">{$goods['page']}</div>
+</div>
+</div>
+</div>
+<script>
+$("#all").click(function(){
+	var _check = $(this).is(':checked');
+	//alert(_check);
+	$(".one").prop("checked",_check);
+})
+    $(".red").click(function(){
+		layer.open({
+		type: 1, //page层
+		area: ['300px', '300px'],
+		title: '审核未通过原因',
+		shade: 0.6, //遮罩透明度
+		moveType: 1, //拖拽风格，0是默认，1是传统拖动
+		shift: 1, //0-6的动画形式，-1不开启
+		content: '<div style="padding:50px;">'+$(this).prop("title")+'</div>'
+		});          
+	})
+</script>
+</body>
+</html>

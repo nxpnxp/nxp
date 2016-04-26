@@ -1,0 +1,208 @@
+<?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('web/_header', TEMPLATE_INCLUDEPATH)) : (include template('web/_header', TEMPLATE_INCLUDEPATH));?>
+<?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('web/shop/tabs', TEMPLATE_INCLUDEPATH)) : (include template('web/shop/tabs', TEMPLATE_INCLUDEPATH));?>
+<script type="text/javascript" src="resource/js/lib/jquery-ui-1.10.3.min.js"></script>
+
+<?php  if($operation == 'post') { ?>
+<style type='text/css'>
+    .tab-pane {padding:20px 0 20px 0;}
+</style>
+<div class="main">
+    <form action="" method="post" class="form-horizontal form" enctype="multipart/form-data">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <ul class="nav nav-arrow-next nav-tabs" id="myTab">
+                    <li class="active" ><a href="#tab_basic">基本信息</a></li>
+                    <li><a href="#tab_des">商品描述</a></li>
+                    <li><a href="#tab_param">自定义属性</a></li>
+
+                </ul> 
+              
+                <div class="tab-content">
+                    <div class="tab-pane  active" id="tab_basic"><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('web/shop/goods/supplybasic', TEMPLATE_INCLUDEPATH)) : (include template('web/shop/goods/supplybasic', TEMPLATE_INCLUDEPATH));?></div>
+                    <div class="tab-pane" id="tab_des"><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('web/shop/goods/supplydes', TEMPLATE_INCLUDEPATH)) : (include template('web/shop/goods/supplydes', TEMPLATE_INCLUDEPATH));?></div>
+                    <div class="tab-pane" id="tab_param"><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('web/shop/goods/supplyparam', TEMPLATE_INCLUDEPATH)) : (include template('web/shop/goods/supplyparam', TEMPLATE_INCLUDEPATH));?></div>
+
+                    
+                   
+                    
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-sm-12">
+                            <input type="submit" name="submit" value="提交" class="btn btn-primary col-lg-1" onclick="return formcheck()" />
+                            <input type="hidden" name="id" value="<?php  echo $goods['id']?>" />
+                             <input type="hidden" name="aid" value="<?php  echo $goods['aid']?>" />
+                             <input type="hidden" name="thumb" value="<?php  echo $goods['thumb']?>" />
+                            <input type="hidden" name="content" value="<?php  echo $goods['content']?>" />
+                            <input type="hidden" name="act" value="chk" />
+               <input type="button" name="back" onclick='history.back()' <?php if(cv('shop.goods.add|shop.goods.edit')) { ?>style='margin-left:10px;'<?php  } ?> value="返回列表" class="btn btn-default" />
+
+        </div>
+    </form>
+</div>
+<script>
+$(function(){
+    
+        require(['bootstrap'],function(){
+             $('#myTab a').click(function (e) {
+                 e.preventDefault();
+                 $(this).tab('show');
+             })
+        });
+		if($("input[name=status]:checked").val()==1){
+			$("#reason").css('display','block');
+		}else{
+			$("#reason").css('display','none');	
+		}
+        if($("input[name=status]:checked").val()==2){
+			$("#reason").css('display','block');
+		}else{
+			$("#reason").css('display','none');	
+		}
+		$("input[name=status]").click(function(){
+			if($(this).val()==2){
+					$("#reason").css('display','block');
+				}else{
+				$("#reason").css('display','none');	
+					}
+			})
+		$("input[name=status]").click(function(){
+			if($(this).val()==1){
+					$("#category").css('display','block');
+				}else{
+				$("#category").css('display','none');	
+					}
+			})
+		
+});
+function formcheck() {
+if($("input[name=status]:checked").val() == '2'){
+	if($("textarea[name=reply]").val()==''){
+		alert('请输入未过审原因.');
+		$("#reply").focus();
+        return false;
+	}
+}
+if($("input[name=status]:checked").val() == '1'){
+	if($("select[name=ccate]").val()=='0'){
+		alert('请选择分类.');
+        return false;
+	}
+}
+}	 
+</script>
+<?php  } else if($operation == 'display') { ?>
+
+<div class="main">
+    <div class="panel panel-info">
+        <div class="panel-heading">筛选</div>
+        <div class="panel-body">
+            <form action="./index.php" method="get" class="form-horizontal" role="form">
+                <input type="hidden" name="c" value="site" />
+                <input type="hidden" name="a" value="entry" />
+                <input type="hidden" name="m" value="ewei_shop" />
+                <input type="hidden" name="do" value="shop" />
+                <input type="hidden" name="p"  value="supplygoods" />
+                <input type="hidden" name="op" value="display" />
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label">关键字</label>
+                    <div class="col-xs-12 col-sm-8 col-lg-9">
+                        <input class="form-control" name="keyword" id="" type="text" value="<?php  echo $_GPC['keyword'];?>">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label">状态</label>
+                    <div class="col-xs-12 col-sm-8 col-lg-9">
+                        <select name="status" class='form-control'>
+                            <option value="-1" <?php  if($_GPC['status'] == '-1') { ?> selected<?php  } ?>>全部</option>
+                            <option value="0" <?php  if($_GPC['status'] == '0') { ?> selected<?php  } ?>>审核中</option>
+                            <option value="1" <?php  if($_GPC['status'] == '1') { ?> selected<?php  } ?>>已通过</option>
+                            <option value="2" <?php  if($_GPC['status'] == '2') { ?> selected<?php  } ?>>未通过</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-1 control-label">供货商</label>
+                    <div class="col-sm-8 col-xs-12">
+                        <select name="aid" class='form-control'>
+                        <option value="0">全部供货商</option>
+                        <?php  foreach($applies as $k=>$v){ ?>
+                            <option value="<?php  echo $v['id'] ?>" <?php  if($_GET['aid']==$v['id']){?>selected<?php  } ?> ><?php  echo $v['phone'] ?></option>
+                        <?php  } ?>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-2 col-lg-2">
+                        <button class="btn btn-default"><i class="fa fa-search"></i> 搜索</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                </div>
+            </form>
+        </div>
+    </div>
+    <style>
+        .label{cursor:pointer;}
+    </style>
+
+    <form action="" method="post">
+    <div class="panel panel-default">
+        <div class="panel-body table-responsive">
+            <table class="table table-hover">
+                <thead class="navbar-inner">
+                    <tr>
+                        <th style="width:60px;">ID</th>
+                        <th style="width:50px;">商品</th>
+                        <th>&nbsp;</th>
+                        <th style='width:350px;'>商品编号</th>
+                        <th style='width:80px;'>原价</th>
+                        <th style='width:80px;'>现价</th>
+                        <th style='width:150px;'>状态(点击可修改)</th>
+                        <th style="">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <?php  foreach($sgoods as $k=>$v){ ?>
+                    <tr>
+                        
+                        <td><?php  echo $v['id']; ?></td>
+                          <td>
+                              <img src="/supply/Public/Uploads/<?php  echo $v['thumb']; ?>" style="width:40px;height:40px;padding:1px;border:1px solid #ccc;"  />
+                           </td>
+                          <td>
+                          <?php  echo $v['title']; ?>
+                          </td>
+                        <td><?php  echo $v['goodssn']; ?></td>
+                          <td><?php  echo $v['productprice']; ?></td>
+                        <td><?php  echo $v['marketprice']; ?></td>
+                        <td>
+                        <?php  if($v['status']==0){ 
+                        ?>审核中
+                        <?php  }elseif($v['status']==1){ ?>
+                        <span class="text-primary">已通过</span>
+                        <?php  }elseif($v['status']==2){ ?>
+                        <span class="text-danger">未通过</span>
+                        <?php  } ?>
+                        </td>
+                        <td>
+                            <a href="<?php  echo $this->createWebUrl('shop/supplygoods', array('id' => $v['id'], 'op' => 'post'))?>"class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="审核"><i class="fa fa-pencil"></i></a>
+                           
+                        </td>
+                    </tr>
+                 <?php  } ?>
+                
+                </tr>
+                </tbody>
+            </table>
+            <?php  echo $pager;?>
+        </div>
+    </div>
+        </form>
+</div>
+<script type="text/javascript">
+   
+
+</script>
+<?php  } ?>
+<?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('web/_footer', TEMPLATE_INCLUDEPATH)) : (include template('web/_footer', TEMPLATE_INCLUDEPATH));?>

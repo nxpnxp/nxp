@@ -1,0 +1,25 @@
+2016-04-23 15:15:29 trace :
+------------
+Array:
+from : oVALhjsTm9Kb3mSiC_f_WXSt8JwE ;
+to : gh_0263783d11a1 ;
+time : 1461395729 ;
+type : event ;
+event : VIEW ;
+tousername : gh_0263783d11a1 ;
+fromusername : oVALhjsTm9Kb3mSiC_f_WXSt8JwE ;
+createtime : 1461395729 ;
+msgtype : event ;
+eventkey : http://6s.weidianpu.net.cn/app/index.php?i=8&c=entry&do=shop&m=ewei_shop ;
+menuid : 403798568 ;
+
+2016-04-23 15:15:29 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-04-23 15:15:29 response :
+------------
+

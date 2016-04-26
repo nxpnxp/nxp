@@ -1,0 +1,99 @@
+{template 'common/header'}
+<ul class="nav nav-tabs">
+	<li {if $op == 'create_express'}class="active"{/if}><a href="{php echo $this->createWebUrl('printer', array('op' => 'create_express'));}">新建快递单模板</a></li>
+	<li {if $op == 'express'}class="active"{/if} {if $op == 'edit_express'}class="active"{/if}><a href="{php echo $this->createWebUrl('printer', array('op' => 'express'))}">快递单模板管理</a></li>
+	<li {if $op == 'create_normal'}class="active"{/if}><a href="{php echo $this->createWebUrl('printer', array('op' => 'create_normal'));}">新建发货单打印模板</a></li>
+	<li {if $op == 'normal'}class="active"{/if} {if $op == 'edit_normal'}class="active"{/if}><a href="{php echo $this->createWebUrl('printer', array('op' => 'normal'));}">发货单打印模板管理</a></li>
+</ul>
+
+<link rel="stylesheet" href="./resource/components/kindeditor/themes/default/default.css" />
+<script charset="utf-8" src="./resource/components/kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" src="./resource/components/kindeditor/lang/zh_CN.js"></script>
+<script type="text/javascript"> 
+	String.prototype.replaceAll = function(reallyDo, replaceWith, ignoreCase) { 
+		if (!RegExp.prototype.isPrototypeOf(reallyDo)) { 
+			return this.replace(new RegExp(reallyDo, (ignoreCase ? "gi": "g")), replaceWith); 
+		} else { 
+			return this.replace(reallyDo, replaceWith); 
+		} 
+	} 
+</script>
+
+
+<div class="main">
+	<div class="panel panel-info">
+		<div class="panel-heading">自定义参数</div>
+		<div class="panel-body">
+			<div class="form-group">
+				<table style="width:100%">
+					<tr>
+						<td style="width:50px">购货人：{buyer}</td>
+						<td style="width:50px">收货人姓名：{consignee}</td>
+						<td style="width:50px">收货人电话：{tel}</td>
+						<td style="width:50px">收货人地址：{address}</td>
+						<td style="width:50px">支付方式：{pay_type}</td>
+					</tr>
+					<tr>
+						<td>配送方式：{dispatch_type}</td>
+						<td>发货单号：{dispatch_sn}</td>
+						<td>订单编号：{order_sn}</td>
+						<td>下单时间：{time}</td>
+						<td>订单商品列表(多行)：{good_line}</td>
+					</tr>
+					<tr>
+						<td>订单总金额：{order_price}</td>
+						<td>商品总金额：{good_price}</td>
+						<td>配送费用：{dispatch_price}</td>
+						<td>打印时间：{print_time}</td>
+						<td></td>
+					</tr>
+				</table>
+			</div> 
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">发货单打印模板</div>
+		<div class="panel-body table-responsive">
+			<form action=""  method="post" class="form-horizontal form">
+				<div class="form-group">
+					<label class="col-xs-12 col-sm-3 col-md-2 control-label">设置模板名称：</label>
+					<div class="col-sm-2 col-lg-2 col-xs-12">
+						<input class="form-control" name="print_name" type="text" value="{$entry['name']}" />
+					</div>
+					<div class="col-sm-2 col-lg-2 col-xs-12">
+						<button name="预设模板" type="submit"  class="btn btn-success span2" value="预设模板">预设模板</button>
+					</div>
+				</div>
+				<table class="tb">
+					<tr>
+						<th></th>
+						<td>
+							<table style="width:99%">
+								<tr>
+									<td>{php echo tpl_ueditor('gmsptz', $entry['printerconfig'])}</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table><br/>
+						</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td >
+							<div class="form-group">
+								<div class="col-sm-2 col-lg-2 col-xs-12">
+									<button name="submit" type="submit"  class="btn btn-primary span3" value="提交">提交</button>
+									<input type="hidden" name="token" value="{$_W['token']}" />
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+{template 'common/footer'}

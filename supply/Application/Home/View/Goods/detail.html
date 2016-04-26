@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>供货商管理后台</title>
+<link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
+<link href="__PUBLIC__/css/my.css" rel="stylesheet">
+<!--[if lte IE 9]>
+<script src="__PUBLIC__/js/respond.js"></script>
+<![endif]-->
+<style>
+body{font-family:"微软雅黑", "宋体";}
+.thumb{ margin:10px auto; text-align:center;}
+</style>
+<script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+{:W('Template/top')}
+<div class="container"><div class="row">
+
+<div class="col-md-2">{:W('Template/left')}</div>
+<div class="col-md-10">
+<div class="panel panel-default">
+  <div class="panel-heading">{$goods.title}</div>
+  <div class="panel-body">
+  <div class="thumb"><img src="{:IMG_PATH}{$goods.thumb}"/></div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">商品详情</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">商品属性</a></li>
+  </ul>
+    <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">{$goods.content|htmlspecialchars_decode}</div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+    <table class="table table-striped">
+    <volist name="param" id="vo">
+    <tr>
+    <td>{$vo.title}</td><td>{$vo.value}</td>
+    </tr>
+    </volist>
+    </table>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+</div></div>
+
+</body>
+</html>

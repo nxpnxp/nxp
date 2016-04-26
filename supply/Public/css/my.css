@@ -1,0 +1,44 @@
+﻿/* CSS Document */
+ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p {margin:0; padding:0; font-weight: normal;}
+ol, ul ,li{list-style: none;}
+body {color:#333; font: 13px/1.5  "\5FAE\8F6F\96C5\9ED1","\5b8b\4f53";}
+table { border-collapse:collapse;}
+a { text-decoration:none; font-size:13px;}
+a:hover {text-decoration:none;}
+.clear{ zoom:1;} 
+.clear:after {clear:both; content:"."; display:block; height:0pt; visibility:hidden; overflow:hidden;}
+.dis{display:block;}
+.undis{display:none;}
+em{ font-style:normal; font-size:12px;}
+hr{ border:none; clear:both; height:0; background:none; margin:0; padding:0; border-bottom:#eee solid 1px;  margin:10px 0;}
+img { border: 0; vertical-align: middle;}
+small{font-size:12px;}
+h1,.h1 {
+  font-size: 36px;
+}
+h2,.h2 {
+  font-size: 30px;
+}
+h3,.h3 {
+  font-size: 24px;
+}
+h4,.h4 {
+  font-size: 18px;
+}
+h5,.h5 {
+  font-size: 14px;
+}
+h6,.h6 {
+  font-size: 12px;
+}
+.box{margin:0 auto; padding:10px;}
+#top{ color:#000; font-size:18px;}
+.border{ border:1px solid #ccc; }
+.mt20{ margin-top:20px;}
+.tab-content{ padding-top:15px;}
+.red{ color:#F00;}
+.leftmenu li{ margin-bottom:15px;}
+/*分页*/
+.pagelist{ text-align:center; background:#f1f1f1; padding:7px 0;}
+.pagelist a{ margin:0 5px; border:#6185a2 solid 1px; display:inline-block; padding:2px 6px 1px; line-height:16px; background:#fff; color:#6185a2;}
+.pagelist span{ margin:0 5px; border:#6185a2 solid 1px; display:inline-block; padding:2px 6px 1px; line-height:16px; color:#6185a2; color:#fff; background:#6185a2;}

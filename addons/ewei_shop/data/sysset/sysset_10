@@ -1,0 +1,93 @@
+a:5:{s:2:"id";s:1:"1";s:7:"uniacid";s:2:"10";s:4:"sets";s:4195:"a:5:{s:3:"pay";a:7:{s:6:"weixin";s:1:"1";s:11:"weixin_cert";s:0:"";s:10:"weixin_key";s:0:"";s:11:"weixin_root";s:0:"";s:6:"alipay";s:1:"0";s:6:"credit";s:1:"1";s:4:"cash";s:1:"0";}s:4:"shop";a:9:{s:4:"name";s:12:"品质商城";s:3:"img";s:0:"";s:4:"logo";s:52:"images/10/2015/12/mX6XzmC6IzGu0UCGIUu1kLS6aKgik0.jpg";s:7:"signimg";s:0:"";s:2:"qq";s:0:"";s:7:"address";s:65:"湖北省麻城市孝感乡北路商贸物流城商贸三街14号";s:5:"phone";s:11:"17002753450";s:11:"description";s:0:"";s:5:"style";s:5:"wcnew";}s:5:"share";a:5:{s:9:"followurl";s:107:"http://mp.weixin.qq.com/s?__biz=MzA3OTg2ODA5Nw==&mid=205182939&idx=1&sn=b48ed06eab4c2b1f06e0bb9c2e4fa096#rd";s:5:"title";s:0:"";s:4:"icon";s:0:"";s:4:"desc";s:0:"";s:3:"url";s:0:"";}s:6:"notice";a:17:{s:3:"new";s:43:"teo6I26AeYjqIaTggiLsuCXA7VdB0xQOrVkcZQf3G9M";s:7:"newtype";s:5:"0,1,2";s:6:"submit";s:0:"";s:7:"carrier";s:0:"";s:6:"cancel";s:0:"";s:3:"pay";s:0:"";s:4:"send";s:0:"";s:6:"finish";s:0:"";s:6:"refund";s:0:"";s:7:"refund1";s:0:"";s:7:"refund2";s:0:"";s:7:"upgrade";s:0:"";s:11:"recharge_ok";s:0:"";s:15:"recharge_refund";s:0:"";s:8:"withdraw";s:0:"";s:11:"withdraw_ok";s:0:"";s:13:"withdraw_fail";s:0:"";}s:5:"trade";a:10:{s:7:"receive";s:1:"9";s:10:"refunddays";s:1:"7";s:13:"refundcontent";s:2740:"一、在品质生活商城购物的消费者均可享受品质生活完善的售后服务 但品质生活商品均不提供换货服务，若您觉得商品不合适或不喜欢，请直接申请退货退款，并把商品回寄再重新下单。
+
+二、申请退货时请在售后退货卡上注明具体的问题，并保证商品及商品本身包装保持品质生活出售时原装且配件赠品资料齐全，不影响商品二次销售。
+
+三、在收到商品之后需要退货，可在订单签收次日起7天内于“个人中心”自行提交退货申请，点击我的订单→已发货→退货/退款。
+
+四、自订单签收次日起7天内（以快递公司的送货单上的签收日期为准）可办理退货。自下订单后15天内未做退货申请，订单将自动变为交易成功状态，此时不能再提交退货申请，若无退货申请仍将商品寄回的订单，品质生活有权不处理。
+
+五、我们将在收到退货 包裹（商品返仓）3天内办理退款手续，若使用微信钱包支付，退款会在1个工作日内退回微信钱包。
+
+六、由于品质生活全部商品实行包邮政策，您退货时仍需先支付商品回寄运费，品质生活收到回件后会根据实际退货原因，决定本次回寄邮费是否予以退还。（若由于商品质量问题退货，退款金额为商品价格+回寄邮费；若由于您个人原因退货，退款金额为商品价格）。
+
+七、下列情况不给予办理7天无理由退货：
+（1）超过订单签收次日起7天外（以快递公司的送货单上的签收日期为准）；
+（2）未经授权的维修、误用、碰撞、疏忽、滥用、进液、事故、改动、不正确的安装所造成的商品损坏问题，或撕毁、涂改标贴、机器序号、防伪标记、保修卡等三包凭证信息与商品不符合及被涂改的；
+（3） 礼包或套装中商品不可以部分退货。
+
+八、退货运费：
+（1）因商品质量问题产生的退货，退货运费由品质生活承担，回寄退货商品时，在售后卡上填写收款信息，请选择普通快递并预付运费，在快递单上注明退回的商品，品质生活收到包裹后会连同回寄运费一起退款，品质生活拒收平邮或以到付形式回寄的包裹；
+（2） 因您个人原因产生的退货，在保证不影响商品二次销售的情况下，退货运费由您个人承担，且品质生活拒收平邮或以到付形式回寄的包裹，在品质生活收到包裹后，3天内为您办理退款手续；
+（3）拒收或填写错信息等您个人因素导致派件失败，一律等品质生活收到退件后处理，并由您个人承担来回运费。";s:11:"receivetime";s:0:"";s:13:"closerecharge";s:1:"0";s:8:"withdraw";s:1:"1";s:13:"withdrawmoney";s:2:"10";s:5:"money";s:0:"";s:6:"credit";s:0:"";s:12:"shareaddress";s:1:"1";}}";s:7:"plugins";s:2417:"a:2:{s:10:"commission";a:24:{s:5:"texts";a:21:{s:5:"agent";s:9:"分销商";s:4:"shop";s:6:"小店";s:6:"myshop";s:12:"我的小店";s:6:"center";s:12:"创业中心";s:6:"become";s:12:"开始创业";s:8:"withdraw";s:6:"提现";s:10:"commission";s:6:"佣金";s:11:"commission1";s:12:"分销佣金";s:16:"commission_total";s:12:"累计佣金";s:13:"commission_ok";s:15:"可提现佣金";s:16:"commission_apply";s:15:"已申请佣金";s:16:"commission_check";s:15:"待打款佣金";s:15:"commission_lock";s:15:"未结算佣金";s:14:"commission_pay";s:18:"成功提现佣金";s:17:"commission_detail";s:12:"佣金明细";s:5:"order";s:12:"分销订单";s:6:"myteam";s:15:"我的人脉圈";s:2:"c1";s:12:"一级人脉";s:2:"c2";s:12:"二级人脉";s:2:"c3";s:12:"三级人脉";s:10:"mycustomer";s:12:"我的团队";}s:2:"tm";a:17:{s:10:"templateid";s:44:"vTKjpiHo0Azs7tlWfZ4NKqQ12CMDm2I8pDfRGI32FB8 ";s:22:"commission_becometitle";s:27:"成为分销商通知&quot;";s:17:"commission_become";s:61:"亲爱的 [昵称] ，在[时间] 您成为我们的分销商";s:25:"commission_agent_newtitle";s:0:"";s:20:"commission_agent_new";s:0:"";s:25:"commission_order_paytitle";s:0:"";s:20:"commission_order_pay";s:0:"";s:28:"commission_order_finishtitle";s:0:"";s:23:"commission_order_finish";s:0:"";s:21:"commission_applytitle";s:0:"";s:16:"commission_apply";s:0:"";s:21:"commission_checktitle";s:0:"";s:16:"commission_check";s:0:"";s:19:"commission_paytitle";s:0:"";s:14:"commission_pay";s:0:"";s:23:"commission_upgradetitle";s:0:"";s:18:"commission_upgrade";s:0:"";}s:5:"level";s:1:"3";s:11:"commission1";s:2:"10";s:11:"commission2";s:1:"1";s:11:"commission3";s:1:"1";s:7:"selfbuy";s:1:"1";s:12:"become_child";s:1:"0";s:6:"become";s:1:"1";s:17:"become_ordercount";s:0:"";s:17:"become_moneycount";s:0:"";s:12:"become_order";s:1:"0";s:10:"become_reg";s:1:"0";s:12:"become_check";s:1:"1";s:8:"withdraw";s:2:"10";s:13:"closetocredit";s:1:"0";s:10:"settledays";s:0:"";s:8:"levelurl";s:0:"";s:12:"select_goods";s:1:"1";s:11:"closemyshop";s:1:"0";s:5:"style";s:7:"default";s:9:"levelname";s:12:"普通等级";s:5:"regbg";s:0:"";s:10:"buttontext";s:12:"马上分销";}s:5:"qiniu";a:1:{s:4:"user";a:5:{s:6:"upload";s:1:"1";s:10:"access_key";s:40:"ZvdmkmlvethwRgBvl9JgM_cHcsXQYfLuwQ0430zg";s:10:"secret_key";s:40:"VZiW-3Jyn0GnZW_7ViGCdy0C8v8H2dM7oFWzKUXw";s:6:"bucket";s:10:"shangcheng";s:3:"url";s:30:"7xoxho.com1.z0.glb.clouddn.com";}}}";s:3:"sec";s:4530:"a:3:{s:4:"cert";s:1598:"-----BEGIN CERTIFICATE-----
+MIIEbjCCA9egAwIBAgIDBNz1MA0GCSqGSIb3DQEBBQUAMIGKMQswCQYDVQQGEwJD
+TjESMBAGA1UECBMJR3Vhbmdkb25nMREwDwYDVQQHEwhTaGVuemhlbjEQMA4GA1UE
+ChMHVGVuY2VudDEMMAoGA1UECxMDV1hHMRMwEQYDVQQDEwpNbXBheW1jaENBMR8w
+HQYJKoZIhvcNAQkBFhBtbXBheW1jaEB0ZW5jZW50MB4XDTE1MDgxMTAwNTIwMVoX
+DTI1MDgwODAwNTIwMVowgZ4xCzAJBgNVBAYTAkNOMRIwEAYDVQQIEwlHdWFuZ2Rv
+bmcxETAPBgNVBAcTCFNoZW56aGVuMRAwDgYDVQQKEwdUZW5jZW50MQ4wDAYDVQQL
+EwVNTVBheTEzMDEGA1UEAxQq6bq75Z+O5ZOB6LSo55Sf5rS755S15a2Q5ZWG5Yqh
+5pyJ6ZmQ5YWs5Y+4MREwDwYDVQQEEwgxMDIzNDIyNDCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBALkiCfqSEZxR+12r8p59xIqD/NrDcbYHpKT+p44bdX6t
+S8OM80myTquernto2+Nc7vEwpC3WQoaVL8ITD/ofY02yv6945ZtZa1fqxWcZnIiP
+HYp+QtfzaJ4T9v6Z03VOfCWKt04VhA6m2wE2sLtQemhDg3iIqURFcd0QILZsnZFa
+5/gyiX08XcF62vp9qwVzxQ83G8FZBz3PRPQSOnVvxQiUsEP9fMhNfyy8sYcdu3BC
+w5HtVfy0MgzR5fK4FGKaB4Gh1c2bkB/R1ymRKWxG695veH0oGyiHPnw50oOZ4AKo
+rK9bms1h3y9fBU8qPWx4a7xqLnOkLn7OtGNJ50t7Ld8CAwEAAaOCAUYwggFCMAkG
+A1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHSJDRVMtQ0EgR2VuZXJhdGUgQ2VydGlm
+aWNhdGUiMB0GA1UdDgQWBBQVTfmj9P1SIkELfKi1AJxRZVheMDCBvwYDVR0jBIG3
+MIG0gBQ+BSb2ImK0FVuIzWR+sNRip+WGdKGBkKSBjTCBijELMAkGA1UEBhMCQ04x
+EjAQBgNVBAgTCUd1YW5nZG9uZzERMA8GA1UEBxMIU2hlbnpoZW4xEDAOBgNVBAoT
+B1RlbmNlbnQxDDAKBgNVBAsTA1dYRzETMBEGA1UEAxMKTW1wYXltY2hDQTEfMB0G
+CSqGSIb3DQEJARYQbW1wYXltY2hAdGVuY2VudIIJALtUlyu8AOhXMA4GA1UdDwEB
+/wQEAwIGwDAWBgNVHSUBAf8EDDAKBggrBgEFBQcDAjANBgkqhkiG9w0BAQUFAAOB
+gQAp407qENgtmo0WR5CzCfxvTgvtw4ywTCMk/6fEQz141/e88/AdoUdMpF2f0GlR
+twtoummf0NiDzaYz6lCjx+1LsZSUpxhMtlpiGREViaphwTFwLhPtDQFWJQuXzFTH
+R358RtFJrcelr9TIFLBhF5iLQjI4q3f0dYn5douM1Ev++g==
+-----END CERTIFICATE-----
+";s:3:"key";s:1704:"-----BEGIN PRIVATE KEY-----
+MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC5Ign6khGcUftd
+q/KefcSKg/zaw3G2B6Sk/qeOG3V+rUvDjPNJsk6rnq57aNvjXO7xMKQt1kKGlS/C
+Ew/6H2NNsr+veOWbWWtX6sVnGZyIjx2KfkLX82ieE/b+mdN1TnwlirdOFYQOptsB
+NrC7UHpoQ4N4iKlERXHdECC2bJ2RWuf4Mol9PF3Betr6fasFc8UPNxvBWQc9z0T0
+Ejp1b8UIlLBD/XzITX8svLGHHbtwQsOR7VX8tDIM0eXyuBRimgeBodXNm5Af0dcp
+kSlsRuveb3h9KBsohz58OdKDmeACqKyvW5rNYd8vXwVPKj1seGu8ai5zpC5+zrRj
+SedLey3fAgMBAAECggEAG715+U3BzcaK/7IwHIeD162HSdBXTYs/pGlz+dsrc9vL
+qnWITtak6xpP0rYXnK3kL8e2Ehg0x627Bj2M+1GQs6fBCS34WZrAdt/6zEQOLHgl
+WQcqROl4F5euPuAVy1IDUCzE4rJeo0NlNX1YZfjdHppfLMRteIlfUlyESlFkGs9e
+kQ2JBuimmCtV7d5VRirMf3rIV3XuhNvAVcdjgetyvAjpiH/lhRtNg72+gJkzesO4
+z6fAIpUr6637R946JnXGSkh+wI6cAdkui0HH06QZT2rpyqTK7DGFTsnlzAlw6QPD
+P6SEQaYs1wG3dUjhagz2x8GfsLCOszHyV2ZQ5a8TQQKBgQD15JIMKp1PhV26H42A
+mkcVvzq/loEeov5jf82re16hyOGoDoSsqY+tfrH+d/wFD+kYOBTjEmNTxdUrTI7Z
+H6koMbLACDYc5bHXXCIVNVOupo/BjCXXmBUUDYK5SIAbr7Lpcta5CemOyM/ruMDZ
+GcXygglr2twd5Evms0tKzd9eyQKBgQDAvh38HKqXVnIPM3ZkfOZVKGEYpEROGQlD
+b0UL3dXJetVnEGqUInlYU4x3P1C9QnGPURJT/Q07RSo4kUQvxeot1NCBQNMigTX9
+z01r3+F8vEzBvuN2HOU/l7eAGhCQ2fstnUtS2P3uqYrdV2toNYq47Cjh0dCG9uIt
+Rj2WO+ozZwKBgFZrS6z8+Sauj59PYZL2Jc+N0t7szVpwHInpq+X9yOeBS1WeLKDm
+QvnN0k7F6ov46Io7g5O+rawOlnnOQVIr326h8NmuyR3k2FkBJ3VetZdnMJTsZYxd
+BeNzUCNASM3yNSX412BXDH/DMdf9qcFjXn95lkgStlPHHanqD6ctrbiJAoGAa/sW
++WNl/xsjE3kVXv7KW/MfUprU2ZwVIH56BEfnudTjMbZ0v0EBEobcLwJ9zUooLM6S
+ohMnEomROdfIh6stozeTCJa0sqQJB4TYLxNiVGt55SF4dXeCx7nLyCzSExTML6Xr
+ySJgQREjBxYuylcUvL0xujG9zZ8K36p2XnB6qQkCgYBX2G4KQEwHqm7uSbFVhpH7
+TNuOKchvJ/YvPnrR9EoCpVsJXl6CPkrIV7r9xDHkU0ANXvoTrGH5wpkpcI+/9MfJ
+jUKKJoA+0Jr/gPg2YZVQz32UMCpMIhGtsNZvZqZceiQBI6AKHyodAmZMeqiz9DpP
+KP3BvqcTierKXUfDIwIQ1g==
+-----END PRIVATE KEY-----
+";s:4:"root";s:1160:"-----BEGIN CERTIFICATE-----
+MIIDIDCCAomgAwIBAgIENd70zzANBgkqhkiG9w0BAQUFADBOMQswCQYDVQQGEwJV
+UzEQMA4GA1UEChMHRXF1aWZheDEtMCsGA1UECxMkRXF1aWZheCBTZWN1cmUgQ2Vy
+dGlmaWNhdGUgQXV0aG9yaXR5MB4XDTk4MDgyMjE2NDE1MVoXDTE4MDgyMjE2NDE1
+MVowTjELMAkGA1UEBhMCVVMxEDAOBgNVBAoTB0VxdWlmYXgxLTArBgNVBAsTJEVx
+dWlmYXggU2VjdXJlIENlcnRpZmljYXRlIEF1dGhvcml0eTCBnzANBgkqhkiG9w0B
+AQEFAAOBjQAwgYkCgYEAwV2xWGcIYu6gmi0fCG2RFGiYCh7+2gRvE4RiIcPRfM6f
+BeC4AfBONOziipUEZKzxa1NfBbPLZ4C/QgKO/t0BCezhABRP/PvwDN1Dulsr4R+A
+cJkVV5MW8Q+XarfCaCMczE1ZMKxRHjuvK9buY0V7xdlfUNLjUA86iOe/FP3gx7kC
+AwEAAaOCAQkwggEFMHAGA1UdHwRpMGcwZaBjoGGkXzBdMQswCQYDVQQGEwJVUzEQ
+MA4GA1UEChMHRXF1aWZheDEtMCsGA1UECxMkRXF1aWZheCBTZWN1cmUgQ2VydGlm
+aWNhdGUgQXV0aG9yaXR5MQ0wCwYDVQQDEwRDUkwxMBoGA1UdEAQTMBGBDzIwMTgw
+ODIyMTY0MTUxWjALBgNVHQ8EBAMCAQYwHwYDVR0jBBgwFoAUSOZo+SvSspXXR9gj
+IBBPM5iQn9QwHQYDVR0OBBYEFEjmaPkr0rKV10fYIyAQTzOYkJ/UMAwGA1UdEwQF
+MAMBAf8wGgYJKoZIhvZ9B0EABA0wCxsFVjMuMGMDAgbAMA0GCSqGSIb3DQEBBQUA
+A4GBAFjOKer89961zgK5F7WF0bnj4JXMJTENAKaSbn+2kmOeUJXRmm/kEd5jhW6Y
+7qj/WsjTVbJmcVfewCHrPSqnI0kBBIZCe/zuf6IWUrVnZ9NA2zsmWLIodz2uFHdh
+1voqZiegDfqnc1zqcPGUIWVEX/r87yloqaKHee9570+sB3c4
+-----END CERTIFICATE-----";}";}

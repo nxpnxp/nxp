@@ -1,0 +1,83 @@
+{template 'web/_header'}
+{template 'web/shop/tabs'}
+{if $operation == 'display'}
+     <form action="" method="post">
+<div class="panel panel-default">
+    <div class="panel-body table-responsive">
+        <table class="table table-hover">
+            <thead class="navbar-inner">
+                <tr>
+                    <th style="width:30px;">ID</th>
+                    <th>公司名称</th>					
+                    <th>联系人</th>
+                    <th>手机</th>
+                    <th>地址</th>
+                    <th >供应产品</th>
+                    <th >身份证</th>
+                    <th >营业执照</th>
+                    <th style="width:130px;">时间</th>
+                    <th >状态</th>
+                    <th >操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {loop $list $row}
+                <tr>
+                    <td>{$row['id']}</td>
+                    <td>{$row['ca_name']}</td>
+                    <td>{$row['name']}</td>
+                    <td>{$row['phone']}</td>
+                    <td>{$row['addr']}</td>
+                    <td>{$row['product']}</td>
+                    {php $img1 = str_replace('&quot;','',$row['img1']); }
+                    {php $img1 = substr($img1,2); }
+                    {php $img2 = str_replace('&quot;','',$row['img2']); }
+                    {php $img2 = substr($img2,2); }
+                    <td><img src="{$img1}" style="max-height: 100px;width: 100%;" /></td>
+                    <td><img src="{$img2}" style="max-height: 100px;width: 100%;" /></td>
+                    <td>
+                    	申请时间：<br/>
+                    	{php echo date('Y-m-d H:i',$row['applytime']);}
+					</td>
+                    
+                    
+                       <td>
+                                    {if $row['status']==1}
+                                    <span class='label label-default'>申请中</span>
+                                    {elseif $row['status']==2}
+                                    <span class='label label-success'>已通过</span>
+                                    {else}
+                                    <span class='label label-danger'>已关闭</span>
+                                    {/if}
+                                </td>
+                    <td style="text-align:left;">
+                    	{if $row['status']==1}
+                        <a href="{php echo $this->createWebUrl('shop/supply', array('op' => 'shenhe1', 'id' => $row['id'],'status'=>2))}" class="btn btn-default" 
+                                                               >通过</a>
+                        <a href="{php echo $this->createWebUrl('shop/supply', array('op' => 'shenhe2', 'id' => $row['id'],'status'=>0))}" class="btn btn-default" 
+                                                               >拒绝</a>
+                        {/if}
+                    </td>
+                </tr>
+                {/loop} 
+                
+            </tbody>
+        </table>
+        {$pager}
+    </div>
+</div>
+</form>
+<script>
+    require(['bootstrap'], function ($) {
+        $('.btn').hover(function () {
+            $(this).tooltip('show');
+        }, function () {
+            $(this).tooltip('hide');
+        });
+    });
+</script>
+
+{elseif $operation == 'post'}
+
+{/if}
+{template 'web/_footer'}
