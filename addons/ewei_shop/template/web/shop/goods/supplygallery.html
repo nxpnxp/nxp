@@ -1,0 +1,12 @@
+<div class="form-group">
+	<div class="col-sm-9 col-xs-12">
+
+   <ul id="gallery">
+   <?php foreach($gallery as $k=>$v){ ?>
+   <input type="hidden" name="imgs[]" value="http://6s.weidianpu.net.cn/supply/Public/Uploads/<?php echo $v['url']?>"/>
+   <li><img src="/supply/Public/Uploads/<?php echo $v['url']?>"/></li>
+   <?php } ?>
+   </ul>
+
+	</div>
+</div>

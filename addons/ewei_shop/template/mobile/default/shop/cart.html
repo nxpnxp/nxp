@@ -118,6 +118,7 @@ body {margin:0px; background:#f8f8f8;width:100%;}
                  <div class="info">
                      <div class='inner' >
             	      <div class="name" onclick="location.href='{php echo $this->createMobileUrl('shop/detail')}&id=<%value.goodsid%>'"><%value.title%></div>
+					   <div class="name company" title="<%value.aid%>"><%value.aname%></div>
                         <%if value.optionid!='0'%>
                          <div class="optionsel">
                             <div class='content'>
@@ -557,9 +558,25 @@ body {margin:0px; background:#f8f8f8;width:100%;}
                            });
                             
                         });
-                     
+                     //提交购物车
                         $('.paysub').click(function(){
-                            
+							var arr = new Array();
+                            $(".company").each(function(index, element) {
+                                arr.push($(this).attr('title'));
+                            });
+							for(var i=0;i<arr.length;i++){
+							   if(arr[i]==0){
+							       arr.splice(i,1);
+							   }
+							}
+							if(arr.length>1){
+							for(var i=0;i<arr.length;i++){ 
+                               if (arr[i]!=arr[i+1]){ 
+                                    alert("不同供货商的商品不能同时结算"); 
+									return;
+                               } 
+                             } 
+							}
                           var total =  calcprice();
                           if(total<=0){
                               return;

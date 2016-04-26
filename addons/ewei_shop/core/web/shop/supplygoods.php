@@ -15,6 +15,12 @@ if ($operation == 'post') {
 		$params = pdo_fetchall("SELECT * FROM " . tablename('ewei_shop_supply_goods_param') . " WHERE goods_id = :goodsid", array(
             ':goodsid' => $goods['id']
         ));
+		$gallery = pdo_fetchall("SELECT * FROM " . tablename('ewei_shop_supply_goods_imgs') . " WHERE goods_id = :goodsid", array(
+            ':goodsid' => $goods['id']
+        ));
+		$apply = pdo_fetchall("SELECT * FROM " . tablename('ewei_shop_supply_apply') . " WHERE id = :aid", array(
+            ':aid' => $goods['aid']
+        ));
 	}
 	if(isset($_POST['act']) && $_POST['act']=='chk'){
 	$data    = array(
@@ -33,12 +39,18 @@ if ($operation == 'post') {
 			$arr['goodsid'] = intval($_GPC['id']);
 			pdo_insert('ewei_shop_goods_param', $arr);
 		}
+		$gallerys = serialize($_POST['imgs']);
+		$aname = pdo_fetchcolumn("SELECT ca_name FROM ".tablename('ewei_shop_supply_apply')." WHERE id = :id", array(
+            ':id' => $_GPC['aid']
+        ));
 		$gdata = array();
 		$gdata['title'] = trim($_GPC['title']);
 		$gdata['ccate'] = intval($_GPC['ccate']);
 		$gdata['pcate'] = 6;
 		$gdata['aid'] = $_GPC['aid'];
+		$gdata['aname'] = $aname;
 		$gdata['thumb'] = 'http://6s.weidianpu.net.cn/supply/Public/Uploads/'.$_GPC['thumb'];
+		$gdata['thumb_url'] = $gallerys;
 		$gdata['content'] = $_GPC['content'];
 		$gdata['goodssn'] = $_GPC['goodssn'];
 		$gdata['marketprice'] = $_GPC['marketprice'];
@@ -47,6 +59,12 @@ if ($operation == 'post') {
 		$gdata['uniacid'] = 8;
 		$gdata['createtime'] = time();
 		pdo_insert('ewei_shop_goods', $gdata);
+		
+		$_arr = array('marketprice'=>$gdata['marketprice']);
+		 pdo_update('ewei_shop_supply_goods', $_arr, array(
+                'id' => $data['id']
+            ));
+		
 	}
      pdo_update('ewei_shop_supply_goods', $data, array(
                 'id' => $data['id']
