@@ -210,7 +210,7 @@ if (!class_exists('CommissionModel')) {
                     ));
                     foreach ($level1_commissions as $c) {
                         $commission = iunserializer($c['commission1']);
-                        $commission_ok += isset($commission['level' . $agentLevel['id']]) ? $commission['level' . $agentLevel['id']] : $commission['default'];
+                        $commission_ok += $commission['default'];
                     }
                 }
                 if (in_array('lock', $options)) {
@@ -244,7 +244,7 @@ if (!class_exists('CommissionModel')) {
                     }
                 }
                 if (in_array('pay', $options)) {
-                    $level1_commissions2 = pdo_fetchall('select og.commission1  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . " where o.agentid=:agentid and o.status>=3 and og.status1=3 and og.nocommission=0 and o.uniacid=:uniacid ", array(
+                    $level1_commissions2 = pdo_fetchall('select og.commission1  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . " where o.agentid=:agentid and o.status>=1 and og.status1=3 and og.nocommission=0 and o.uniacid=:uniacid ", array(
                         ':uniacid' => $_W['uniacid'],
                         ':agentid' => $member['id']
                     ));
@@ -301,7 +301,7 @@ if (!class_exists('CommissionModel')) {
                         ));
                         foreach ($level2_commissions as $c) {
                             $commission = iunserializer($c['commission2']);
-                            $commission_ok += isset($commission['level' . $agentLevel['id']]) ? $commission['level' . $agentLevel['id']] : $commission['default'];
+                            $commission_ok += $commission['default'];
                         }
                     }
                     if (in_array('lock', $options)) {
@@ -332,7 +332,7 @@ if (!class_exists('CommissionModel')) {
                         }
                     }
                     if (in_array('pay', $options)) {
-                        $level2_commissions3 = pdo_fetchall('select commission2  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid ' . ' where o.agentid in( ' . implode(',', array_keys($level1_agentids)) . ")  and o.status>=3 and og.status2=3 and og.nocommission=0 and o.uniacid=:uniacid", array(
+                        $level2_commissions3 = pdo_fetchall('select commission2  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid ' . ' where o.agentid in( ' . implode(',', array_keys($level1_agentids)) . ")  and o.status>=1 and og.status2=3 and og.nocommission=0 and o.uniacid=:uniacid", array(
                             ':uniacid' => $_W['uniacid']
                         ));
                         foreach ($level2_commissions3 as $c) {
@@ -388,7 +388,7 @@ if (!class_exists('CommissionModel')) {
                         ));
                         foreach ($level3_commissions as $c) {
                             $commission = iunserializer($c['commission3']);
-                            $commission_ok += isset($commission['level' . $agentLevel['id']]) ? $commission['level' . $agentLevel['id']] : $commission['default'];
+                            $commission_ok += $commission['default'];
                         }
                     }
                     if (in_array('lock', $options)) {
@@ -419,7 +419,7 @@ if (!class_exists('CommissionModel')) {
                         }
                     }
                     if (in_array('pay', $options)) {
-                        $level3_commissions3 = pdo_fetchall('select commission3  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . ' where o.agentid in( ' . implode(',', array_keys($level2_agentids)) . ")  and o.status>=3 and og.status3=3 and og.nocommission=0 and o.uniacid=:uniacid", array(
+                        $level3_commissions3 = pdo_fetchall('select commission3  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . ' where o.agentid in( ' . implode(',', array_keys($level2_agentids)) . ")  and o.status>=1 and og.status3=3 and og.nocommission=0 and o.uniacid=:uniacid", array(
                             ':uniacid' => $_W['uniacid']
                         ));
                         foreach ($level3_commissions3 as $c) {
@@ -451,12 +451,20 @@ if (!class_exists('CommissionModel')) {
                     $commission_total += $commission['default'];
                 }
 				
-				$level4_commissions3 = pdo_fetchall('select commission4  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . ' where o.agentid in( ' . implode(',', array_keys($level3_agentids)) . ")  and o.status>=3 and og.status4=3 and og.nocommission=0 and o.uniacid=:uniacid", array(
+				$level4_commissions3 = pdo_fetchall('select commission4  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . ' where o.agentid in( ' . implode(',', array_keys($level3_agentids)) . ")  and o.status>=1 and og.status4=3 and og.nocommission=0 and o.uniacid=:uniacid", array(
                     ':uniacid' => $_W['uniacid']
                 ));
                 foreach ($level4_commissions3 as $c) {
                     $commission = iunserializer($c['commission4']);
                     $commission_pay +=  $commission['default'];
+                }
+				
+				$level4_commissions = pdo_fetchall('select commission4  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . ' where o.agentid in( ' . implode(',', array_keys($level3_agentids)) . ")  and ({$time} - o.createtime > {$day_times}) and o.status>=3 and og.status4=0  and og.nocommission=0 and o.uniacid=:uniacid", array(
+                    ':uniacid' => $_W['uniacid']
+                ));
+                foreach ($level4_commissions as $c) {
+                    $commission = iunserializer($c['commission4']);
+                    $commission_ok += $commission['default'];
                 }
                    
             }
@@ -476,13 +484,22 @@ if (!class_exists('CommissionModel')) {
                     $commission_total += $commission['default'];
                 }
 				
-				$level5_commissions3 = pdo_fetchall('select commission5  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . ' where o.agentid in( ' . implode(',', array_keys($level4_agentids)) . ")  and o.status>=3 and og.status5=3 and og.nocommission=0 and o.uniacid=:uniacid", array(
+				$level5_commissions3 = pdo_fetchall('select commission5  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . ' where o.agentid in( ' . implode(',', array_keys($level4_agentids)) . ")  and o.status>=1 and og.status5=3 and og.nocommission=0 and o.uniacid=:uniacid", array(
                     ':uniacid' => $_W['uniacid']
                 ));
                 foreach ($level5_commissions3 as $c) {
                     $commission = iunserializer($c['commission5']);
                     $commission_pay +=  $commission['default'];
                 }
+				
+				$level5_commissions = pdo_fetchall('select commission5  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . ' where o.agentid in( ' . implode(',', array_keys($level4_agentids)) . ")  and ({$time} - o.createtime > {$day_times}) and o.status>=3 and og.status5=0  and og.nocommission=0 and o.uniacid=:uniacid", array(
+                    ':uniacid' => $_W['uniacid']
+                ));
+                foreach ($level5_commissions as $c) {
+                    $commission = iunserializer($c['commission5']);
+                    $commission_ok += $commission['default'];
+                }
+				
             }
 			
 			if ($level5 > 0) {
@@ -492,7 +509,7 @@ if (!class_exists('CommissionModel')) {
 	            $level6          = count($level6_agentids);
 	            $agentcount += $level6;
 				
-				$level6_commissions = pdo_fetchall('select commission6  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid ' . ' where o.agentid in( ' . implode(',', array_keys($level5_agentids)) . ")  and o.status>=1 and og.nocommission=0 and o.uniacid=:uniacid", array(
+				$level6_commissions = pdo_fetchall('select commission6  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid ' . ' left join  ' . tablename('ewei_shop_member') . ' m on m.openid = o.openid' . ' where o.agentid in( ' . implode(',', array_keys($level5_agentids)) . ")  and o.status>=1 and og.nocommission=0 and o.uniacid=:uniacid  and m.two=1", array(
                     ':uniacid' => $_W['uniacid']
                 ));
                 foreach ($level6_commissions as $c) {
@@ -500,13 +517,22 @@ if (!class_exists('CommissionModel')) {
                     $commission_total += $commission['default'];
                 }
 				
-				$level6_commissions3 = pdo_fetchall('select commission6  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . ' where o.agentid in( ' . implode(',', array_keys($level5_agentids)) . ")  and o.status>=3 and og.status6=3 and og.nocommission=0 and o.uniacid=:uniacid", array(
+				$level6_commissions3 = pdo_fetchall('select commission6  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . ' left join  ' . tablename('ewei_shop_member') . ' m on m.openid = o.openid' . ' where o.agentid in( ' . implode(',', array_keys($level5_agentids)) . ")  and o.status>=1 and og.status6=3 and og.nocommission=0 and o.uniacid=:uniacid  and m.two=1", array(
                     ':uniacid' => $_W['uniacid']
                 ));
                 foreach ($level6_commissions3 as $c) {
                     $commission = iunserializer($c['commission6']);
                     $commission_pay +=  $commission['default'];
                 }
+				
+				$level6_commissions = pdo_fetchall('select commission6  from ' . tablename('ewei_shop_order_goods') . ' og ' . ' left join  ' . tablename('ewei_shop_order') . ' o on o.id = og.orderid' . ' left join  ' . tablename('ewei_shop_member') . ' m on m.openid = o.openid' . ' where o.agentid in( ' . implode(',', array_keys($level5_agentids)) . ")  and ({$time} - o.createtime > {$day_times}) and o.status>=3 and og.status6=0  and og.nocommission=0 and o.uniacid=:uniacid and m.two=1", array(
+                    ':uniacid' => $_W['uniacid']
+                ));
+                foreach ($level6_commissions as $c) {
+                    $commission = iunserializer($c['commission6']);
+                    $commission_ok += $commission['default'];
+                }
+				
             }
 
             $member['agentcount']       = $agentcount;
@@ -1020,7 +1046,7 @@ if (!class_exists('CommissionModel')) {
 			}
 
 			//特殊分类 立即打款
-			if(!empty($member['topcommissionlevel'])){
+			//if(!empty($member['topcommissionlevel'])){
 				$order_goods = pdo_fetchall('select * from ' . tablename('ewei_shop_order_goods') . ' where orderid=:orderid and uniacid=:uniacid ', array(
 	                ':orderid' => $orderid,
 	                ':uniacid' => $_W['uniacid']
@@ -1030,65 +1056,67 @@ if (!class_exists('CommissionModel')) {
 						$arr = array(1,2);
 						if(in_array($v['cateid'], $arr)){
 							if(!empty($member['agentid'])){
-								$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where agentid=:agentid and uniacid=:uniacid limit 1', array(
-						                ':agentid' => $member['id'],
+								$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where id=:id and uniacid=:uniacid limit 1', array(
+						                ':id' => $member['agentid'],
 						                ':uniacid' => $_W['uniacid']
 						            ));
 								if(!empty($member_ll)){
 									$commission_temp = iunserializer($v['commission1']);
-			                    	$commission[1]['money'] = $commission_temp['default'];
+			                    	$commission[1]['money'] = !empty($member_ll['topcommissionlevel']) ? $commission_temp['default'] : 0;
 									$commission[1]['openid'] = $member_ll['openid'];
-									$commission[1]['id'] = $member_ll['id'];
+									$commission[1]['agentid'] = $member_ll['agentid'];
 									
-									$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where agentid=:agentid and uniacid=:uniacid limit 1', array(
-							                ':agentid' => $commission[1]['id'],
+									$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where id=:id and uniacid=:uniacid limit 1', array(
+							                ':id' => $commission[1]['agentid'],
 							                ':uniacid' => $_W['uniacid']
 							            ));
 									if(!empty($member_ll)){
 										$commission_temp = iunserializer($v['commission2']);
-				                    	$commission[2]['money'] = $commission_temp['default'];
+				                    	$commission[2]['money'] = !empty($member_ll['topcommissionlevel']) ? $commission_temp['default'] : 0;
 										$commission[2]['openid'] = $member_ll['openid'];
-										$commission[2]['id'] = $member_ll['id'];
+										$commission[2]['agentid'] = $member_ll['agentid'];
 										
-										$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where agentid=:agentid and uniacid=:uniacid limit 1', array(
-								                ':agentid' => $commission[2]['id'],
+										$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where id=:id and uniacid=:uniacid limit 1', array(
+								                ':id' => $commission[2]['agentid'],
 								                ':uniacid' => $_W['uniacid']
 								            ));
 										if(!empty($member_ll)){
 											$commission_temp = iunserializer($v['commission3']);
-					                    	$commission[3]['money'] = $commission_temp['default'];
+					                    	$commission[3]['money'] = !empty($member_ll['topcommissionlevel']) ? $commission_temp['default'] : 0;
 											$commission[3]['openid'] = $member_ll['openid'];
-											$commission[3]['id'] = $member_ll['id'];
+											$commission[3]['agentid'] = $member_ll['agentid'];
 											
-											$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where agentid=:agentid and uniacid=:uniacid limit 1', array(
-									                ':agentid' => $commission[3]['id'],
+											$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where id=:id and uniacid=:uniacid limit 1', array(
+									                ':id' => $commission[3]['agentid'],
 									                ':uniacid' => $_W['uniacid']
 									            ));
 											if(!empty($member_ll)){
 												$commission_temp = iunserializer($v['commission4']);
-						                    	$commission[4]['money'] = $commission_temp['default'];
+						                    	$commission[4]['money'] = !empty($member_ll['topcommissionlevel']) ? $commission_temp['default'] : 0;
+												$commission[4]['money'] = !empty($member_ll['two']) ? $commission[4]['money'] : 0;
 												$commission[4]['openid'] = $member_ll['openid'];
-												$commission[4]['id'] = $member_ll['id'];
+												$commission[4]['agentid'] = $member_ll['agentid'];
 												
-												$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where agentid=:agentid and uniacid=:uniacid limit 1', array(
-										                ':agentid' => $commission[4]['id'],
+												$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where id=:id and uniacid=:uniacid limit 1', array(
+										                ':id' => $commission[4]['agentid'],
 										                ':uniacid' => $_W['uniacid']
 										            ));
 												if(!empty($member_ll)){
 													$commission_temp = iunserializer($v['commission5']);
-							                    	$commission[5]['money'] = $commission_temp['default'];
+							                    	$commission[5]['money'] = !empty($member_ll['topcommissionlevel']) ? $commission_temp['default'] : 0;
+													$commission[5]['money'] = !empty($member_ll['two']) ? $commission[5]['money'] : 0;
 													$commission[5]['openid'] = $member_ll['openid'];
-													$commission[5]['id'] = $member_ll['id'];
+													$commission[5]['agentid'] = $member_ll['agentid'];
 													
-													$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where agentid=:agentid and uniacid=:uniacid limit 1', array(
-											                ':agentid' => $commission[5]['id'],
+													$member_ll = pdo_fetch('select id,agentid,openid from ' . tablename('ewei_shop_member') . ' where id=:id and uniacid=:uniacid limit 1', array(
+											                ':id' => $commission[5]['agentid'],
 											                ':uniacid' => $_W['uniacid']
 											            ));
 													if(!empty($member_ll)){
 														$commission_temp = iunserializer($v['commission6']);
-								                    	$commission[6]['money'] = $commission_temp['default'];
+								                    	$commission[6]['money'] = !empty($member_ll['topcommissionlevel']) ? $commission_temp['default'] : 0;
+														$commission[6]['money'] = !empty($member_ll['two']) ? $commission[6]['money'] : 0;
 														$commission[6]['openid'] = $member_ll['openid'];
-														$commission[6]['id'] = $member_ll['id'];
 													}
 												}
 											}
@@ -1099,7 +1127,7 @@ if (!class_exists('CommissionModel')) {
 								if(!empty($commission)){
 									foreach ($commission as $k1 => $v1) {
 										if(empty($v1['money'])){
-											break;
+											continue;
 										}
 										$openid = $v1['openid'];
 										$type = 1;
@@ -1138,7 +1166,7 @@ if (!class_exists('CommissionModel')) {
 						}
 					}
 				}
-			}
+			//}
 			
 			//改变会员topcommissionlevel状态
         	m('member')->updateonetwo($orderid);
