@@ -113,7 +113,7 @@ body {margin:0px; background:#f8f8f8;width:100%;}
                         sel='1' 
                         data-maxbuy='<%value.maxbuy%>' 
                         data-stock='<%value.stock%>'>
-                 <div class="ico"><i class="fa fa-check-circle-o" style="color:#0C9;"></i></div>
+                 <div class="ico" title='xxxx'><i class="fa fa-check-circle-o" style="color:#0C9;"></i></div>
                  <div class="img" onclick="location.href='{php echo $this->createMobileUrl('shop/detail')}&id=<%value.goodsid%>'"><img src="<%value.thumb%>"/></div>
                  <div class="info">
                      <div class='inner' >
@@ -562,7 +562,11 @@ body {margin:0px; background:#f8f8f8;width:100%;}
                         $('.paysub').click(function(){
 							var arr = new Array();
                             $(".company").each(function(index, element) {
+								
+								if(/(fa-check-circle-o)/.test($(this).parent().parent().prev().prev().find('i').attr('class'))){
                                 arr.push($(this).attr('title'));
+								}
+								
                             });
 							for(var i=0;i<arr.length;i++){
 							   if(arr[i]==0){

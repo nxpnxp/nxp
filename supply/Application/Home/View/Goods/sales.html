@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>供货商管理后台</title>
+<link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
+<link href="__PUBLIC__/css/my.css" rel="stylesheet">
+<!--[if lte IE 9]>
+<script src="__PUBLIC__/js/respond.js"></script>
+<![endif]-->
+<style>
+body{font-family:"微软雅黑", "宋体";}
+.red{ color:#F00;}
+</style>
+<script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/layer.js"></script>
+</head>
+
+<body>
+{:W('Template/top')}
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+{:W('Template/left')}
+</div>
+<div class="col-md-10">
+<table class="table .table-striped">
+<tr><th>图片</th><th>名称</th><th>货号</th><th>销量</th></tr>
+<volist name="goods['data']" id="vo">
+<tr>
+<td><img src="{$vo.thumb}" width="50"></td>
+<td>{$vo.title}</td>
+<td>{$vo.goodssn}</td>
+<td>{$vo.salesreal}</td>
+</tr>
+</volist>
+</table>
+<div class="pagelist">{$goods['page']}</div>
+</div>
+</div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

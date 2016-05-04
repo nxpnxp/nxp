@@ -1,0 +1,1816 @@
+[ 2016-04-29T09:36:05+08:00 ] 127.0.0.1 /6spl/nxp/supply/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001467s ]
+
+[ 2016-04-29T09:41:59+08:00 ] 127.0.0.1 /6spl/nxp/supply/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_apply` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_apply` WHERE `phone` = '18522700999' LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2016-04-29T09:41:59+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0160s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0167s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0203s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007440s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013913s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004515s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004937s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002807s ]
+
+[ 2016-04-29T09:42:06+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 87  [ RunTime:0.0141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006999s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012776s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004329s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005628s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001780s ]
+
+[ 2016-04-29T09:46:45+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.004981s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009507s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003228s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003768s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003461s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2016-04-29T09:48:53+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0155s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.004203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004086s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004339s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2016-04-29T09:48:55+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0166s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0148s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0167s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007552s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013920s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003459s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003703s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2016-04-29T09:48:57+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 87  [ RunTime:0.0146s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001226s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013655s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004542s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005039s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001553s ]
+
+[ 2016-04-29T09:49:22+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0168s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 87  [ RunTime:0.0155s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005534s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001236s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010598s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003443s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003982s ]
+NOTIC: [8] Undefined index: originalprice F:\apache\htdocs\6spl\nxp\supply\Application\Runtime\Cache\Home\36fa37d88cec5b2146d5c3bd54b06f8f.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003839s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2016-04-29T09:49:28+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0135s ]
+NOTIC: [8] Undefined index: validate F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ims_ewei_shop_supply_goods` SET `title`='测试4',`content`='' WHERE `id` = 87 [ RunTime:0.0322s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001298s ]
+
+[ 2016-04-29T09:49:29+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0151s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0180s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000833s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009868s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003427s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003693s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2016-04-29T09:49:31+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 86 LIMIT 1   [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 86  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 86  [ RunTime:0.0165s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007838s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004852s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005550s ]
+NOTIC: [8] Undefined index: originalprice F:\apache\htdocs\6spl\nxp\supply\Application\Runtime\Cache\Home\36fa37d88cec5b2146d5c3bd54b06f8f.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005209s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2016-04-29T09:49:34+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 86 LIMIT 1   [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 86  [ RunTime:0.0143s ]
+NOTIC: [8] Undefined index: validate F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ims_ewei_shop_supply_goods` SET `title`='测试3',`content`='' WHERE `id` = 86 [ RunTime:0.0174s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+
+[ 2016-04-29T09:49:35+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0160s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0196s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0151s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006584s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012741s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004388s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004727s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002008s ]
+
+[ 2016-04-29T09:49:37+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0165s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 85  [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 85  [ RunTime:0.0139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007912s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004845s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005940s ]
+NOTIC: [8] Undefined index: originalprice F:\apache\htdocs\6spl\nxp\supply\Application\Runtime\Cache\Home\36fa37d88cec5b2146d5c3bd54b06f8f.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005371s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001681s ]
+
+[ 2016-04-29T09:49:40+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 85  [ RunTime:0.0157s ]
+NOTIC: [8] Undefined index: validate F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ims_ewei_shop_supply_goods` SET `title`='测试2',`content`='' WHERE `id` = 85 [ RunTime:0.0128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001316s ]
+
+[ 2016-04-29T09:49:42+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0146s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0148s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0158s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000892s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009814s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003393s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003924s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003658s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2016-04-29T09:49:44+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/84
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 84 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 84  [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 84  [ RunTime:0.0133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005020s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001860s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010636s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003311s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003862s ]
+NOTIC: [8] Undefined index: originalprice F:\apache\htdocs\6spl\nxp\supply\Application\Runtime\Cache\Home\36fa37d88cec5b2146d5c3bd54b06f8f.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003673s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001521s ]
+
+[ 2016-04-29T09:49:49+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/84
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 84 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 84  [ RunTime:0.0132s ]
+NOTIC: [8] Undefined index: validate F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0130s ]
+SQL: DELETE FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 84 [ RunTime:0.0121s ]
+SQL: INSERT INTO `ims_ewei_shop_supply_goods_param` (`goods_id`,`title`,`value`) VALUES ('84','11','11') [ RunTime:0.0128s ]
+SQL: INSERT INTO `ims_ewei_shop_supply_goods_param` (`goods_id`,`title`,`value`) VALUES ('84','22','22') [ RunTime:0.0128s ]
+SQL: UPDATE `ims_ewei_shop_supply_goods` SET `title`='111',`content`='&lt;p&gt;111&lt;/p&gt;' WHERE `id` = 84 [ RunTime:0.0128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001346s ]
+
+[ 2016-04-29T09:49:50+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001436s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0156s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0144s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0169s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.004938s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000784s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003635s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003897s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2016-04-29T09:50:38+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 86 LIMIT 1   [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0174s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 86  [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 86  [ RunTime:0.0133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007700s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001242s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014356s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004768s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005494s ]
+NOTIC: [8] Undefined index: originalprice F:\apache\htdocs\6spl\nxp\supply\Application\Runtime\Cache\Home\36fa37d88cec5b2146d5c3bd54b06f8f.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005291s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002014s ]
+
+[ 2016-04-29T09:50:50+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 86 LIMIT 1   [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 86  [ RunTime:0.0128s ]
+NOTIC: [8] Undefined index: validate F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ims_ewei_shop_supply_goods` SET `title`='大黄蜂',`content`='' WHERE `id` = 86 [ RunTime:0.0133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001074s ]
+
+[ 2016-04-29T09:50:52+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0160s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0147s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0158s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007746s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004993s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005772s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005361s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001551s ]
+
+[ 2016-04-29T09:50:54+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 86 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 86  [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 86  [ RunTime:0.0154s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007790s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014591s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004729s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005519s ]
+NOTIC: [8] Undefined index: originalprice F:\apache\htdocs\6spl\nxp\supply\Application\Runtime\Cache\Home\36fa37d88cec5b2146d5c3bd54b06f8f.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005310s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001611s ]
+
+[ 2016-04-29T09:52:26+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 86 LIMIT 1   [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 86  [ RunTime:0.0232s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 86  [ RunTime:0.0221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008722s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015777s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005902s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006582s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002192s ]
+
+[ 2016-04-29T09:52:34+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/goods/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0146s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0190s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0176s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000866s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009757s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003327s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003801s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003579s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2016-04-29T09:52:37+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 87  [ RunTime:0.0158s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006787s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000776s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003069s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003520s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003363s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001148s ]
+
+[ 2016-04-29T09:52:50+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002207s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0137s ]
+NOTIC: [8] Undefined index: validate F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ims_ewei_shop_supply_goods` SET `title`='擎天柱',`originalprice`='10.00',`content`='' WHERE `id` = 87 [ RunTime:0.0135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001251s ]
+
+[ 2016-04-29T09:52:51+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0134s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0118s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006463s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000806s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010861s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003195s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003654s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003434s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001118s ]
+
+[ 2016-04-29T09:54:19+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 87  [ RunTime:0.0141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007816s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001222s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013734s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003076s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003550s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003385s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2016-04-29T09:54:31+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0143s ]
+NOTIC: [8] Undefined index: validate F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `thumb` FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0136s ]
+NOTIC: [2] unlink(./Public/Uploads/Goods/2016-04-26/571f22fb876a6.jpg) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\apache\htdocs\6spl\nxp\supply\Application\Common\Common\function.php 第 51 行.
+SQL: UPDATE `ims_ewei_shop_supply_goods` SET `title`='威震天',`originalprice`='10.00',`content`='',`thumb`='Goods/2016-04-29/5722bed77a31b.jpg',`date`='1461894871' WHERE `id` = 87 [ RunTime:0.0135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000856s ]
+
+[ 2016-04-29T09:54:33+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0178s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0156s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007890s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001309s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004830s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005587s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005196s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001694s ]
+
+[ 2016-04-29T09:54:36+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0161s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 87  [ RunTime:0.0127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007616s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001213s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004935s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005660s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005406s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001661s ]
+
+[ 2016-04-29T09:54:45+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0138s ]
+NOTIC: [8] Undefined index: validate F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `thumb` FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0162s ]
+SQL: UPDATE `ims_ewei_shop_supply_goods` SET `title`='威震天',`originalprice`='10.00',`content`='',`thumb`='Goods/2016-04-29/5722bee538297.jpg',`date`='1461894885' WHERE `id` = 87 [ RunTime:0.0149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+
+[ 2016-04-29T09:54:48+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.4150s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.1468s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.2492s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006858s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004092s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004773s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004509s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2016-04-29T09:55:13+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 85  [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 85  [ RunTime:0.0164s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012515s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004053s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004731s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004514s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001427s ]
+
+[ 2016-04-29T09:55:20+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 85  [ RunTime:0.0132s ]
+NOTIC: [8] Undefined index: validate F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ims_ewei_shop_supply_goods` SET `title`='擎天柱',`originalprice`='25.00',`content`='' WHERE `id` = 85 [ RunTime:0.0149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000695s ]
+
+[ 2016-04-29T09:55:22+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0168s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0155s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0151s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011559s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003999s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004676s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004365s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001414s ]
+
+[ 2016-04-29T09:55:43+08:00 ] 127.0.0.1 /6spl/nxp/supply/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003162s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001599s ]
+
+[ 2016-04-29T09:55:59+08:00 ] 127.0.0.1 /6spl/nxp/supply/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_apply` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_apply` WHERE `phone` = '18522700999' LIMIT 1   [ RunTime:0.0216s ]
+
+[ 2016-04-29T09:55:59+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0176s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0147s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0181s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006409s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000931s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004138s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004759s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004489s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002077s ]
+
+[ 2016-04-29T09:56:01+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0162s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 87  [ RunTime:0.0171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006912s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012923s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004570s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005061s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001492s ]
+
+[ 2016-04-29T09:56:08+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 87  [ RunTime:0.0137s ]
+NOTIC: [8] Undefined index: validate F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `thumb` FROM `ims_ewei_shop_supply_goods` WHERE `id` = 87 LIMIT 1   [ RunTime:0.0119s ]
+SQL: UPDATE `ims_ewei_shop_supply_goods` SET `title`='威震天',`originalprice`='10.00',`content`='',`thumb`='Goods/2016-04-29/5722bf381b63c.jpg',`date`='1461894968' WHERE `id` = 87 [ RunTime:0.0125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-04-29T09:56:09+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0160s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0129s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0154s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006360s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000810s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011853s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004160s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004874s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004527s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001413s ]
+
+[ 2016-04-29T09:57:09+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0142s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0137s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0147s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002587s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002825s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2016-04-29T10:04:22+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/84
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 84 LIMIT 1   [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 84  [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_imgs` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_imgs` WHERE `goods_id` = 84  [ RunTime:0.0149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006658s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000943s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011844s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002937s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003489s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003251s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001270s ]
+
+[ 2016-04-29T10:04:33+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/edit/id/84
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` WHERE `id` = 84 LIMIT 1   [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 84  [ RunTime:0.0136s ]
+NOTIC: [8] Undefined index: validate F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods_param` [ RunTime:0.0148s ]
+SQL: DELETE FROM `ims_ewei_shop_supply_goods_param` WHERE `goods_id` = 84 [ RunTime:0.0143s ]
+SQL: INSERT INTO `ims_ewei_shop_supply_goods_param` (`goods_id`,`title`,`value`) VALUES ('84','11','11') [ RunTime:0.0169s ]
+SQL: INSERT INTO `ims_ewei_shop_supply_goods_param` (`goods_id`,`title`,`value`) VALUES ('84','22','22') [ RunTime:0.0150s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `thumb` FROM `ims_ewei_shop_supply_goods` WHERE `id` = 84 LIMIT 1   [ RunTime:0.0150s ]
+SQL: UPDATE `ims_ewei_shop_supply_goods` SET `title`='爵士',`originalprice`='200.00',`content`='&lt;p&gt;111&lt;/p&gt;',`thumb`='Goods/2016-04-29/5722c131ab9e9.jpg',`date`='1461895473' WHERE `id` = 84 [ RunTime:0.0145s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000933s ]
+
+[ 2016-04-29T10:04:35+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0169s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0163s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0151s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006675s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012441s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004324s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004804s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001478s ]
+
+[ 2016-04-29T10:29:04+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0139s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0145s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000994s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003354s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003595s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+

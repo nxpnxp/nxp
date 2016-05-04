@@ -48,8 +48,6 @@
                             </label>
                         </div>
                         <?php  echo tpl_form_field_daterange('time', array('starttime'=>date('Y-m-d H:i', $starttime),'endtime'=>date('Y-m-d H:i', $endtime)),true);?>
-
-
                     </div>
                 </div>
 

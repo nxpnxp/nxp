@@ -55,12 +55,13 @@ if ($operation == 'post') {
 		$gdata['goodssn'] = $_GPC['goodssn'];
 		$gdata['marketprice'] = $_GPC['marketprice'];
 		$gdata['productprice'] = $_GPC['productprice'];
+		$gdata['costprice'] = $_GPC['costprice'];
 		$gdata['status'] = 1;
 		$gdata['uniacid'] = 8;
 		$gdata['createtime'] = time();
 		pdo_insert('ewei_shop_goods', $gdata);
 		
-		$_arr = array('marketprice'=>$gdata['marketprice']);
+		$_arr = array('marketprice'=>$gdata['marketprice'],'productprice'=>$gdata['productprice']);
 		 pdo_update('ewei_shop_supply_goods', $_arr, array(
                 'id' => $data['id']
             ));

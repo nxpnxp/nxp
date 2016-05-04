@@ -15,10 +15,31 @@ if ($operation == 'display') {
     $paras     = array(
         ':uniacid' => $_W['uniacid']
     );
+	
+	$sql = "select id,phone,ca_name from ".tablename('ewei_shop_supply_apply').' WHERE `status` = :status'." ORDER BY id DESC";
+    $applies = pdo_fetchall($sql,array('status'=>2)); 
+	
     if (empty($starttime) || empty($endtime)) {
         $starttime = strtotime('-1 month');
         $endtime   = time();
     }
+	
+    if (empty($starttime1) || empty($endtime1)) {
+        $starttime1 = strtotime('-1 month');
+        $endtime1   = time();
+    }
+
+    if (!empty($_GPC['endtime'])) {
+        $starttime1 = strtotime($_GPC['endtime']['start']);
+        $endtime1   = strtotime($_GPC['endtime']['end']);
+        if ($_GPC['searchetime'] == '1') {
+            $condition .= " AND o.finishtime >= :starttime AND o.finishtime <= :endtime ";
+            $paras[':starttime'] = $starttime1;
+            $paras[':endtime']   = $endtime1;
+        }
+    }
+
+
     if (!empty($_GPC['time'])) {
         $starttime = strtotime($_GPC['time']['start']);
         $endtime   = strtotime($_GPC['time']['end']);
@@ -28,6 +49,14 @@ if ($operation == 'display') {
             $paras[':endtime']   = $endtime;
         }
     }
+	
+	if (isset($_GPC['aid']) && $_GPC['aid']!=0) {
+		$aid = intval($_GPC['aid']);
+        $condition .= " AND `aid` = $aid";
+        //$params[':aid'] = intval($_GPC['aid']);
+    }
+	
+
     if ($_GPC['paytype'] != '') {
         if ($_GPC['paytype'] == '2') {
             $condition .= " AND ( o.paytype =21 or o.paytype=22 or o.paytype=23 )";
@@ -107,7 +136,8 @@ if ($operation == 'display') {
             }
         }
     }
-    $sql = "select o.* , a.realname,a.mobile,a.province,a.city,a.area,a.address, d.dispatchname,r.status as refundstatus from " . tablename('ewei_shop_order') . " o" . " left join " . tablename('ewei_shop_order_refund') . " r on r.orderid=o.id and ifnull(r.status,-1)<>-1" . " left join " . tablename('ewei_shop_member') . " m on m.openid=o.openid " . " left join " . tablename('ewei_shop_member_address') . " a on o.addressid = a.id " . " left join " . tablename('ewei_shop_dispatch') . " d on d.id = o.dispatchid " . " where $condition ORDER BY o.createtime DESC,o.status DESC  ";
+    $sql = "select o.* , a.realname,a.mobile,a.province,a.city,a.area,a.address, d.dispatchname,r.status as refundstatus from " . tablename('ewei_shop_order') . " o" ." left join ".tablename('ewei_shop_order_goods')." og on o.id = og.orderid" . " left join " . tablename('ewei_shop_order_refund') . " r on r.orderid=o.id and ifnull(r.status,-1)<>-1" . " left join " . tablename('ewei_shop_member') . " m on m.openid=o.openid " . " left join " . tablename('ewei_shop_member_address') . " a on o.addressid = a.id " . " left join " . tablename('ewei_shop_dispatch') . " d on d.id = o.dispatchid " . " where $condition ORDER BY o.createtime DESC,o.status DESC  ";
+   //$sql = "select o.* from " . tablename('ewei_shop_order')." o left join ".tablename('ewei_shop_order_goods')." og on o.id = og.orderid" . " where $condition ";
     if (empty($_GPC['export'])) {
         $sql .= "LIMIT " . ($pindex - 1) * $psize . ',' . $psize;
     }
@@ -452,8 +482,8 @@ if ($operation == 'display') {
             "columns" => $columns
         ));
     }
-    $total      = pdo_fetchcolumn('SELECT COUNT(*) FROM ' . tablename('ewei_shop_order') . " o " . " left join " . tablename('ewei_shop_order_refund') . " r on r.orderid=o.id and ifnull(r.status,-1)<>-1" . " left join " . tablename('ewei_shop_member') . " m on m.openid=o.openid  " . " left join " . tablename('ewei_shop_member_address') . " a on o.addressid = a.id " . " WHERE $condition", $paras);
-    $totalmoney = pdo_fetchcolumn('SELECT sum(o.price) FROM ' . tablename('ewei_shop_order') . " o " . " left join " . tablename('ewei_shop_order_refund') . " r on r.orderid=o.id and ifnull(r.status,-1)<>-1" . " left join " . tablename('ewei_shop_member') . " m on m.openid=o.openid  " . " left join " . tablename('ewei_shop_member_address') . " a on o.addressid = a.id " . " WHERE $condition", $paras);
+    $total      = pdo_fetchcolumn('SELECT COUNT(*) FROM ' . tablename('ewei_shop_order') . " o " . " left join ".tablename('ewei_shop_order_goods')." og on o.id = og.orderid" ." left join " . tablename('ewei_shop_order_refund') . " r on r.orderid=o.id and ifnull(r.status,-1)<>-1" . " left join " . tablename('ewei_shop_member') . " m on m.openid=o.openid  " . " left join " . tablename('ewei_shop_member_address') . " a on o.addressid = a.id " . " WHERE $condition", $paras);
+    $totalmoney = pdo_fetchcolumn('SELECT sum(o.price) FROM ' . tablename('ewei_shop_order') . " o " ." left join ".tablename('ewei_shop_order_goods')." og on o.id = og.orderid" . " left join " . tablename('ewei_shop_order_refund') . " r on r.orderid=o.id and ifnull(r.status,-1)<>-1" . " left join " . tablename('ewei_shop_member') . " m on m.openid=o.openid  " . " left join " . tablename('ewei_shop_member_address') . " a on o.addressid = a.id " . " WHERE $condition", $paras);
     $pager      = pagination($total, $pindex, $psize);
     load()->func('tpl');
     include $this->template('web/order/list');

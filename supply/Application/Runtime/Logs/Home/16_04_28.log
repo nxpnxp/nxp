@@ -1,0 +1,114 @@
+[ 2016-04-28T09:09:57+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2016-04-28T09:34:03+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_apply` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `ims_ewei_shop_supply_apply` WHERE `phone` = '18522700999' LIMIT 1   [ RunTime:0.0171s ]
+
+[ 2016-04-28T09:34:04+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_supply_goods` [ RunTime:0.0137s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ims_ewei_shop_supply_goods` LIMIT 1   [ RunTime:0.0132s ]
+NOTIC: [2] Invalid argument supplied for foreach() F:\apache\htdocs\6spl\nxp\supply\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `ims_ewei_shop_supply_goods` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0144s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006720s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012506s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004356s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005027s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004731s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001379s ]
+
+[ 2016-04-28T09:34:06+08:00 ] 127.0.0.1 /6spl/nxp/supply/index.php/Home/order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `ims_ewei_shop_order` [ RunTime:0.0159s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ims_ewei_shop_order a left join ims_ewei_shop_order_goods b on a.id = b.orderid left join ims_ewei_shop_goods c on b.goodsid = c.id  WHERE ( aid = 2 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT a.*,b.goodsid,c.title,c.aid FROM ims_ewei_shop_order a left join ims_ewei_shop_order_goods b on a.id = b.orderid left join ims_ewei_shop_goods c on b.goodsid = c.id  WHERE ( aid = 2 ) ORDER BY a.id desc LIMIT 0,10   [ RunTime:0.0196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006767s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001189s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004510s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004899s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001475s ]
+

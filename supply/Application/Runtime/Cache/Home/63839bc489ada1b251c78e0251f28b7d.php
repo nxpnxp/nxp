@@ -5,17 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>供货商管理后台</title>
-<link href="/supply/Public/css/bootstrap.min.css" rel="stylesheet">
-<link href="/supply/Public/css/my.css" rel="stylesheet">
+<link href="/6spl/nxp/supply/Public/css/bootstrap.min.css" rel="stylesheet">
+<link href="/6spl/nxp/supply/Public/css/my.css" rel="stylesheet">
 <!--[if lte IE 9]>
-<script src="/supply/Public/js/respond.js"></script>
+<script src="/6spl/nxp/supply/Public/js/respond.js"></script>
 <![endif]-->
 <style>
 body{font-family:"微软雅黑", "宋体";}
 .red{ color:#F00;}
 </style>
-<script src="/supply/Public/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="/supply/Public/js/layer.js"></script>
+<script src="/6spl/nxp/supply/Public/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/6spl/nxp/supply/Public/js/layer.js"></script>
 </head>
 
 <body>
@@ -26,17 +26,17 @@ body{font-family:"微软雅黑", "宋体";}
 <?php echo W('Template/left');?>
 </div>
 <div class="col-md-10">
-<form method="post" action="/supply/index.php/Home/Goods/delAll">
+<form method="post" action="/6spl/nxp/supply/index.php/Home/Goods/delAll">
 <table class="table .table-striped">
 <tr><th></th><th>图片</th><th>名称</th><th>货号</th><th>状态</th><th>操作</th></tr>
 <?php if(is_array($goods['data'])): $i = 0; $__LIST__ = $goods['data'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 <td><input class="one" type="checkbox" name="ids[]" value="<?php echo ($vo["id"]); ?>"/></td>
 <td><img src="<?php echo IMG_PATH; echo ($vo["thumb"]); ?>" width="50"></td>
-<td><a href="/supply/index.php/Home/Goods/detail/id/<?php echo ($vo["id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+<td><a href="/6spl/nxp/supply/index.php/Home/Goods/detail/id/<?php echo ($vo["id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
 <td><?php echo ($vo["goodssn"]); ?></td>
 <td><?php if($vo["status"] == '未过审，查看原因'): ?><a href="#" class="red" title="<?php echo ($vo["reply"]); ?>"><?php echo ($vo["status"]); ?></a><?php else: echo ($vo["status"]); endif; ?></td>
 <td>
-<a href="/supply/index.php/Home/Goods/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> <a href="/supply/index.php/Home/Goods/delete/id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除吗？');" title="移除">删除</a>
+<a href="/6spl/nxp/supply/index.php/Home/Goods/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> <a href="/6spl/nxp/supply/index.php/Home/Goods/delete/id/<?php echo ($vo["id"]); ?>" onclick="return confirm('确定要删除吗？');" title="移除">删除</a>
 </td>
 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 <tr><td colspan="6"><input type="checkbox" id="all" >全选 <input type="submit" value="批量删除"/></td></tr>

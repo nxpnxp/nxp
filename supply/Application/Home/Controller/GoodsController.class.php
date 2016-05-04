@@ -17,7 +17,7 @@ class GoodsController extends Controller {
 		foreach($data['data'] as $k=>$v){
 			if($v['status']==0){
 				$data['data'][$k]['status'] = '审核中...';
-			}elseif($v['status']==0){
+			}elseif($v['status']==1){
 				$data['data'][$k]['status'] = '审核通过';
 			}else{
 				$data['data'][$k]['status'] = '未过审，查看原因';
@@ -131,5 +131,15 @@ class GoodsController extends Controller {
 		}
 		else 
 			$this->error('删除失败！原因：'.$model->getError());
+	}
+	//销量
+	public function sales()
+	{
+		$aid = session('aid');
+		$where = "aid = $aid and deleted=0";
+		$gModel = D("EweiShopGoods");
+		$data = $gModel->search($where);
+		$this->assign('goods',$data);
+		$this->display();
 	}
 }

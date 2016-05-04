@@ -36,7 +36,7 @@ if ($_W['isajax']) {
             if (!empty($cartids)) {
                 $condition = ' and c.id in (' . $cartids . ')';
             }
-            $sql   = 'SELECT c.goodsid,c.total,g.maxbuy,g.issendfree,g.isnodiscount,g.weight,o.weight as optionweight,g.title,g.thumb,ifnull(o.marketprice, g.marketprice) as marketprice,o.title as optiontitle,c.optionid,g.storeids,g.isverify,g.deduct,g.virtual,o.virtual as optionvirtual,discounts FROM ' . tablename('ewei_shop_member_cart') . ' c ' . ' left join ' . tablename('ewei_shop_goods') . ' g on c.goodsid = g.id ' . ' left join ' . tablename('ewei_shop_goods_option') . ' o on c.optionid = o.id ' . " where c.openid=:openid and  c.deleted=0 and c.uniacid=:uniacid {$condition} order by c.id desc";
+            $sql   = 'SELECT c.goodsid,c.total,g.aid,g.aname,g.maxbuy,g.issendfree,g.isnodiscount,g.weight,o.weight as optionweight,g.title,g.thumb,ifnull(o.marketprice, g.marketprice) as marketprice,o.title as optiontitle,c.optionid,g.storeids,g.isverify,g.deduct,g.virtual,o.virtual as optionvirtual,discounts FROM ' . tablename('ewei_shop_member_cart') . ' c ' . ' left join ' . tablename('ewei_shop_goods') . ' g on c.goodsid = g.id ' . ' left join ' . tablename('ewei_shop_goods_option') . ' o on c.optionid = o.id ' . " where c.openid=:openid and  c.deleted=0 and c.uniacid=:uniacid {$condition} order by c.id desc";
             $goods = pdo_fetchall($sql, array(
                 ':uniacid' => $uniacid,
                 ':openid' => $openid
@@ -495,7 +495,7 @@ if ($_W['isajax']) {
             if (empty($goodsid)) {
                 show_json(0, '参数错误，请刷新重试');
             }
-            $sql  = 'SELECT id as goodsid,ccate,title, weight,total,issendfree,isnodiscount, thumb,marketprice,cash,isverify,goodssn,productsn,sales,istime,timestart,timeend,usermaxbuy,maxbuy,unit,buylevels,buygroups,deleted,status,deduct,virtual,discounts FROM ' . tablename('ewei_shop_goods') . ' where id=:id and uniacid=:uniacid  limit 1';
+            $sql  = 'SELECT id as goodsid,ccate,title, weight,total,issendfree,isnodiscount, aid,aname,thumb,marketprice,cash,isverify,goodssn,productsn,sales,istime,timestart,timeend,usermaxbuy,maxbuy,unit,buylevels,buygroups,deleted,status,deduct,virtual,discounts FROM ' . tablename('ewei_shop_goods') . ' where id=:id and uniacid=:uniacid  limit 1';
             $data = pdo_fetch($sql, array(
                 ':uniacid' => $uniacid,
                 ':id' => $goodsid
@@ -777,6 +777,8 @@ if ($_W['isajax']) {
             $order_goods = array(
                 'uniacid' => $uniacid,
                 'orderid' => $orderid,
+				'aid' => $goods['aid'],
+				'aname' => $goods['aname'],
                 'goodsid' => $goods['goodsid'],
                 'cateid' => $goods['ccate'],
                 'price' => $goods['marketprice'] * $goods['total'],

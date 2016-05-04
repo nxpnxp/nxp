@@ -5,18 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>供货商登录</title>
-<link href="/supply/Public/css/bootstrap.min.css" rel="stylesheet">
+<link href="/6spl/nxp/supply/Public/css/bootstrap.min.css" rel="stylesheet">
 <!--[if lte IE 9]>
-<script src="/supply/Public/js/respond.js"></script>
+<script src="/6spl/nxp/supply/Public/js/respond.js"></script>
 <![endif]-->
 <style>
 body{ background-color:#2c87d8; font-family:"微软雅黑", "宋体";}
 #loginbox{ width:500px; height:320px;position:absolute;top:50%;left:50%;margin-top:-200px;margin-left:-250px;}
 #loginbox p{ text-align:center; font-size:24px; color:#FFF;}
-#login{ width:482px; height:271px; background:url(/supply/Public/images/login_bg.png) no-repeat 0 0; margin:10px auto;}
+#login{ width:482px; height:271px; background:url(/6spl/nxp/supply/Public/images/login_bg.png) no-repeat 0 0; margin:10px auto;}
 form{ width:70%; margin:10px auto; margin-top:50px;}
 </style>
-<script src="/supply/Public/js/jquery-1.10.2.min.js"></script>
+<script src="/6spl/nxp/supply/Public/js/jquery-1.10.2.min.js"></script>
 </head>
 
 <body>

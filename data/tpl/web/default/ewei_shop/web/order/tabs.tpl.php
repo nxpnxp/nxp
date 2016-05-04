@@ -53,4 +53,8 @@
         <a href="#">订单详情</a>
     </li>
     <?php  } ?>
+    
+
+ <li <?php  if($_GPC['p'] == 'supplyorder') { ?> class="active" <?php  } ?>><a href="<?php  echo $this->createWebUrl('order/supplyorder')?>">供应商</a></li>
+
 </ul>

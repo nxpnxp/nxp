@@ -5,20 +5,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>供货商管理后台</title>
-<link href="/supply/Public/css/bootstrap.min.css" rel="stylesheet">
-<link href="/supply/Public/css/my.css" rel="stylesheet">
+<link href="/6spl/nxp/supply/Public/css/bootstrap.min.css" rel="stylesheet">
+<link href="/6spl/nxp/supply/Public/css/my.css" rel="stylesheet">
 <!--[if lte IE 9]>
-<script src="/supply/Public/js/respond.js"></script>
+<script src="/6spl/nxp/supply/Public/js/respond.js"></script>
 <![endif]-->
 <style>
 #thumb,.input-group-addon{ font-size:13px;}
 #ul_pic_list li{margin-top:10px;list-style-type:none;}
 </style>
-<script src="/supply/Public/js/jquery-1.10.2.min.js"></script>
-<script src="/supply/Public/js/bootstrap.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="/supply/Public/ueditor/ueditor.config.js"></script>
-<script type="text/javascript" charset="utf-8" src="/supply/Public/ueditor/ueditor.all.min.js"> </script>
-<script type="text/javascript" charset="utf-8" src="/supply/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script src="/6spl/nxp/supply/Public/js/jquery-1.10.2.min.js"></script>
+<script src="/6spl/nxp/supply/Public/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/6spl/nxp/supply/Public/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/6spl/nxp/supply/Public/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="/6spl/nxp/supply/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">添加商品</div>
   <div class="panel-body">
-    <form class="form-horizontal" action="/supply/index.php/Home/goods/add" method="post" enctype="multipart/form-data" onSubmit="return chkForm()">
+    <form class="form-horizontal" action="/6spl/nxp/supply/index.php/Home/goods/add" method="post" enctype="multipart/form-data" onSubmit="return chkForm()">
     <div>
 
   <!-- Nav tabs -->
@@ -67,7 +67,7 @@
     <div class="col-sm-10">
        <div class="input-group form-group" style="width:100%; margin:0 auto; margin-top:10px;">
             <span class="input-group-addon">供应价</span>
-            <input type="text" name="productprice" id="productprice" class="form-control" value="" />
+            <input type="text" name="originalprice" id="productprice" class="form-control" value="" />
             <span class="input-group-addon">元</span>
         </div>
 
@@ -110,7 +110,7 @@
 </div>
   <div class="form-group" style="margin-top:15px;">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-primary">提交</button> <a href="/supply/index.php/Home/goods/index" class="btn btn-default">返回列表</a>
+      <button type="submit" class="btn btn-primary">提交</button> <a href="/6spl/nxp/supply/index.php/Home/goods/index" class="btn btn-default">返回列表</a>
     </div>
   </div>
     </form>
