@@ -11,7 +11,12 @@ $set    = m('common')->getSysset(array(
 if ($_W['isajax']) {
     $member            = m('member')->getInfo($openid);
     $member['credit1'] = number_format($member['credit1'], 0);
-    $member['credit2'] = number_format($member['credit2'], 2);
+	
+	$oo = pdo_fetch('select credit2 from '.tablename('mc_members').' where uniacid=:uniacid and uid=:uid limit 1',array(
+		':uniacid' => $_W['uniacid'],
+		':uid' => $member['id']
+	));
+    $member['credit2'] = number_format($oo['credit2'], 2);
     $level             = array(
         'levelname' => empty($set['shop']['levelname']) ? '普通会员' : $set['shop']['levelname']
     );

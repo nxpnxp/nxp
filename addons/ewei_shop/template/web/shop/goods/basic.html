@@ -1,3 +1,22 @@
+{if $item['pcate']==7 }
+<div class="form-group">
+    <label class="col-xs-12 col-sm-3 col-md-2 control-label">分销设置</label>
+    <div class="col-sm-9 col-xs-12">
+        <div class='input-group'>
+            <span class='input-group-addon'>一级</span>
+            <input type="text" name="fx1" class="form-control" value="{$item['fx1']}" />
+            <span class='input-group-addon'>二级</span>
+            <input type="text" name="fx2" class="form-control" value="{$item['fx2']}" />
+            <span class='input-group-addon'>三级</span>
+            <input type="text" name="fx3" class="form-control" value="{$item['fx3']}" />
+            <span class='input-group-addon'>六级</span>
+            <input type="text" name="fx6" class="form-control" value="{$item['fx6']}" />
+        </div>
+        <span class='help-block'>不填则默认分类上设置的金额。</span>
+    </div>
+</div>
+{/if}
+
 <div class="form-group">
     <label class="col-xs-12 col-sm-3 col-md-2 control-label">排序</label>
     <div class="col-sm-9 col-xs-12">

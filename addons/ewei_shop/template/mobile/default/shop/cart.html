@@ -112,7 +112,8 @@ body {margin:0px; background:#f8f8f8;width:100%;}
                         data-goodsid="<%value.goodsid%>" 
                         sel='1' 
                         data-maxbuy='<%value.maxbuy%>' 
-                        data-stock='<%value.stock%>'>
+                        data-stock='<%value.stock%>'
+             			data-ccate="<%value.ccate%>" >
                  <div class="ico" title='xxxx'><i class="fa fa-check-circle-o" style="color:#0C9;"></i></div>
                  <div class="img" onclick="location.href='{php echo $this->createMobileUrl('shop/detail')}&id=<%value.goodsid%>'"><img src="<%value.thumb%>"/></div>
                  <div class="info">
@@ -586,11 +587,20 @@ body {margin:0px; background:#f8f8f8;width:100%;}
                               return;
                           }
                           var ids = [];
+                          var ccate = [];
                           $('.cart_good[sel=1]').each(function(){
                                ids.push($(this).data('cartid'));
+                               ccate.push($(this).data('ccate'));
                           })
                           
-                          location.href = core.getUrl('order/confirm',{cartids:ids.join(',')});
+                          core.json('shop/cart',{op:'checkcanbuy',ccate:ccate.join(',')},function(ret){
+		                       if(ret.status==1){
+		                           location.href = core.getUrl('order/confirm',{cartids:ids.join(',')});
+		                       } else{
+		                           core.message(ret.result.message,'','error');
+		                       }
+		                   	},true,true);
+                          
                         })
                             
                     

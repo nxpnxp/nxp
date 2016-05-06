@@ -949,22 +949,33 @@ div.flicking_con a.on{background-position:0 -9px}
                                                  });
                                     }else if(action=='buy'){
                                     
-                require(['core'],function(core){
-					core.json('order/confirm',{op:'checkcanbuy'},function(ret){
-						
+               		
+						var pcate = "{$goods['pcate']}";
 						var ccate = "{$goods['ccate']}";
-						if(ccate == 2){
-							if(ret.status==1){
-	                           location.href = "{php echo $this->createMobileUrl('order/confirm')}&id={$_GPC['id']}&optionid=" +$("#optionid").val() + "&total=" + $("#total").val();
-	                        } else{
-	                           core.tip.show(ret.result.message);
-	                        }
-						}else{
-							location.href = "{php echo $this->createMobileUrl('order/confirm')}&id={$_GPC['id']}&optionid=" +$("#optionid").val() + "&total=" + $("#total").val();
-	                    }
+						if(pcate == 6){
+									if(ccate == 2){
+										require(['core'],function(core){
+											core.json('order/confirm',{op:'checkcanbuy'},function(ret){
+												if(ret.status==1){
+						                           location.href = "{php echo $this->createMobileUrl('order/confirm')}&id={$_GPC['id']}&optionid=" +$("#optionid").val() + "&total=" + $("#total").val();
+						                        } else{
+						                           //core.tip.show(ret.result.message);
+						                           core.message(ret.result.message,'','error');
+						                        }
+                   							},true,true);			
+										});
+									}else{
+										location.href = "{php echo $this->createMobileUrl('order/confirm')}&id={$_GPC['id']}&optionid=" +$("#optionid").val() + "&total=" + $("#total").val();
+				                    }
 						
-                   	},true,true);	
-				});
+						}else if(pcate == 7){
+							location.href = "{php echo $this->createMobileUrl('order/confirm')}&id={$_GPC['id']}&optionid=" +$("#optionid").val() + "&total=" + $("#total").val();
+		                }else{
+		                	require(['core'],function(core){
+								core.tip.show('您的程序设置出错！');
+							});
+						}
+				
                                     
                                     }
 

@@ -13,7 +13,7 @@ if(!empty($aaa)){
 	$openid = 'oVALhjo6XXKiT9Hw1AyTBu-E4KbA';
 	$type = 1;
 	$pay = 100;
-	$no = 'CA20160219170809699067';
+	$no = time() . random(4, true);
 	$result = m('finance')->pay($openid, $type, $pay, $no);
 	var_dump($result);
 	exit;

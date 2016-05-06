@@ -137,6 +137,7 @@
                  core.message(result,"{php echo $this->createMobileUrl('order/detail',array('id'=>$_GPC['orderid']))}",'error');
                  return;
             }
+           
             $('#container').html(tpl('tpl_order_info',result));
             
            if(result.alipay.success){

@@ -16,7 +16,7 @@ if ($_W['isajax']) {
         $list       = array();
         $total      = 0;
         $totalprice = 0;
-        $sql        = 'SELECT f.id,f.total,f.goodsid,g.total as stock, o.stock as optionstock, g.maxbuy,g.title,g.thumb,g.aid,g.aname,ifnull(o.marketprice, g.marketprice) as marketprice,g.productprice,o.title as optiontitle,f.optionid,o.specs FROM ' . tablename('ewei_shop_member_cart') . ' f ' . ' left join ' . tablename('ewei_shop_goods') . ' g on f.goodsid = g.id ' . ' left join ' . tablename('ewei_shop_goods_option') . ' o on f.optionid = o.id ' . ' where 1 ' . $condition . ' ORDER BY `id` DESC ';
+        $sql        = 'SELECT f.id,f.total,f.goodsid,g.total as stock, o.stock as optionstock, g.maxbuy,g.title,g.thumb,g.aid,g.aname,g.ccate,ifnull(o.marketprice, g.marketprice) as marketprice,g.productprice,o.title as optiontitle,f.optionid,o.specs FROM ' . tablename('ewei_shop_member_cart') . ' f ' . ' left join ' . tablename('ewei_shop_goods') . ' g on f.goodsid = g.id ' . ' left join ' . tablename('ewei_shop_goods_option') . ' o on f.optionid = o.id ' . ' where 1 ' . $condition . ' ORDER BY `id` DESC ';
         $list       = pdo_fetchall($sql, $params);
         foreach ($list as &$r) {
             if (!empty($r['optionid'])) {
@@ -33,6 +33,34 @@ if ($_W['isajax']) {
             'list' => $list,
             'totalprice' => $totalprice
         ));
+	} else if ($operation == 'checkcanbuy' && $_W['ispost']) {
+		
+		$ccate = $_GPC['ccate'];
+		$ccate = explode(',', $ccate);
+		$ccate = array_unique($ccate);
+		
+		$one = in_array('1', $ccate);
+		$two = in_array('2', $ccate);
+				
+		$info = pdo_fetch('select * from '. tablename('ewei_shop_member') .' where openid=:openid and uniacid=:uniacid   limit 1',array(
+			':uniacid' => $uniacid,
+			':openid' => $openid
+		));
+		
+		if(empty($info['one'])){
+			if(!empty($two) && empty($one)){
+				show_json(0, array(
+		            'message' => '需先购买旅游类产品'
+		        ));
+			}			
+		}
+		
+		show_json(1, array(
+            'message' => '可购买'
+        ));
+	
+		
+		
     } else if ($operation == 'add' && $_W['ispost']) {
         $id    = intval($_GPC['id']);
         $total = intval($_GPC['total']);
